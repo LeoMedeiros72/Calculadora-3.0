@@ -20,6 +20,8 @@ git clone https://github.com/seu-usuario/calculadora-python.git
 cd calculadora-python
 
 Execute o programa:
+
 Execute o arquivo calculadora.py:
+
 python calculadora.py
 
