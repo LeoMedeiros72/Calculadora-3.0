@@ -17,3 +17,7 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
    ```bash
    git clone https://github.com/seu-usuario/calculadora-python.git
    cd calculadora-python
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
