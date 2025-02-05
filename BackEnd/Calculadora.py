@@ -1,3 +1,8 @@
+# Importar bibliotecas necessárias
+import math
+import numpy as np
+import pandas as pd
+
 # Funções matemáticas
 def adicionar(x, y):
     """Retorna a soma de x e y."""
