@@ -9,7 +9,7 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 - **Multiplicação**: Multiplica dois números.
 - **Divisão**: Divide o primeiro número pelo segundo (com tratamento de divisão por zero).
 - **Potenciação**: Calcula a potência de um número elevado a outro.
-
+- **Fatorial**: Calcula o fatorial de um número.
 ## Como Usar
 
 1. Clone o repositório:
