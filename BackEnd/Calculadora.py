@@ -1,7 +1,5 @@
 # Importar bibliotecas necessárias
 import math
-import numpy as np
-import pandas as pd
 
 # Funções matemáticas
 def adicionar(x, y):
@@ -69,23 +67,20 @@ def calculadora():
                 print(f"Resultado: {dividir(num1, num2)}")
             elif escolha == '5':
                 print(f"Resultado: {potenciacao(num1, num2)}")
+        
+        elif escolha == '6':
+            try:
+                num1 = int(input("Digite o número para calcular o fatorial: "))
+                if num1 < 0:
+                    print("Erro: Fatorial não é definido para números negativos.")
+                    continue
+            except ValueError:
+                print("Entrada inválida! Por favor, digite um número inteiro.")
+                continue
+            print(f"Resultado: {fatorial(num1)}")
+        
         else:
             print("Opção inválida! Tente novamente.")
-
-# Verificação fatorial 
-        
-        if escolha in ['6']:
-            try:
-                num1 = int(input("Digite o primeiro número: "))
-            except ValueError:
-                print("Entrada inválida! Por favor, digite números.")
-                continue
-
-            # Executar a operação escolhida
-            if escolha == '6':
-                print(f"Resultado: {fatorial(num1)}")
-            else:
-              print("Opção inválida! Tente novamente.")
 
 # Executar a calculadora
 if __name__ == "__main__":
