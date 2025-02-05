@@ -15,8 +15,8 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/calculadora-python.git
-   cd calculadora-python
+   git clone https://github.com/LeoMedeiros72/Calculadora-3.0.git
+   cd Calculadora-3.0
 
 ## Licença
 
