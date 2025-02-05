@@ -26,9 +26,9 @@ def potenciacao(x, y):
     """Retorna x elevado à potência de y."""
     return x ** y
 
-def fatorial(x, y):
+def fatorial(x):
     """Retorna x fatorial"""
-    return math.factorial(x)
+    return math.factorial(int(x))
 
 # Interface da calculadora
 def calculadora():
@@ -40,9 +40,9 @@ def calculadora():
         print("4. Divisão")
         print("5. Potenciação")
         print("6. Fatorial")
-        print("6. Sair")
+        print("7. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7): ")
 
         # Sair do programa
         if escolha == '7':
@@ -76,17 +76,16 @@ def calculadora():
         
         if escolha in ['6']:
             try:
-                num1 = float(input("Digite o primeiro número: "))
-                except ValueError:
+                num1 = int(input("Digite o primeiro número: "))
+            except ValueError:
                 print("Entrada inválida! Por favor, digite números.")
                 continue
 
             # Executar a operação escolhida
             if escolha == '6':
                 print(f"Resultado: {fatorial(num1)}")
-    
-        else:
-            print("Opção inválida! Tente novamente.")
+            else:
+              print("Opção inválida! Tente novamente.")
 
 # Executar a calculadora
 if __name__ == "__main__":
