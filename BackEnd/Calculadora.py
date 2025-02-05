@@ -21,6 +21,10 @@ def potenciacao(x, y):
     """Retorna x elevado à potência de y."""
     return x ** y
 
+def fatorial(x, y):
+    """Retorna x fatorial"""
+    return x!
+
 # Interface da calculadora
 def calculadora():
     while True:
