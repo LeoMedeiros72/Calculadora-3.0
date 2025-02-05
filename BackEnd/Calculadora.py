@@ -23,7 +23,7 @@ def potenciacao(x, y):
 
 def fatorial(x, y):
     """Retorna x fatorial"""
-    return x!
+    return math.factorial(x)
 
 # Interface da calculadora
 def calculadora():
@@ -34,12 +34,13 @@ def calculadora():
         print("3. Multiplicação")
         print("4. Divisão")
         print("5. Potenciação")
+        print("6. Fatorial")
         print("6. Sair")
 
         escolha = input("Digite sua escolha (1/2/3/4/5/6): ")
 
         # Sair do programa
-        if escolha == '6':
+        if escolha == '7':
             print("Saindo da calculadora...")
             break
 
@@ -63,6 +64,22 @@ def calculadora():
                 print(f"Resultado: {dividir(num1, num2)}")
             elif escolha == '5':
                 print(f"Resultado: {potenciacao(num1, num2)}")
+        else:
+            print("Opção inválida! Tente novamente.")
+
+# Verificação fatorial 
+        
+        if escolha in ['6']:
+            try:
+                num1 = float(input("Digite o primeiro número: "))
+                except ValueError:
+                print("Entrada inválida! Por favor, digite números.")
+                continue
+
+            # Executar a operação escolhida
+            if escolha == '6':
+                print(f"Resultado: {fatorial(num1)}")
+    
         else:
             print("Opção inválida! Tente novamente.")
 
