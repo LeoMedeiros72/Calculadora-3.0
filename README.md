@@ -1,6 +1,6 @@
 # Calculadora em Python
 
-Este é um projeto simples de uma calculadora em Python que realiza operações básicas como adição, subtração, multiplicação, divisão e potenciação. O projeto foi desenvolvido para fins educacionais e pode ser expandido com mais funcionalidades.
+Este é um projeto simples de uma calculadora em Python que realiza operações básicas como adição, subtração, multiplicação, divisão, potenciação e fatorial. O projeto foi desenvolvido para fins educacionais e pode ser expandido com mais funcionalidades.
 
 ## Funcionalidades
 
