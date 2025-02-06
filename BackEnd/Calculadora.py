@@ -1,32 +1,34 @@
-# Importar bibliotecas necessárias
 import math
 
 # Funções matemáticas
 def adicionar(x, y):
-    """Retorna a soma de x e y."""
     return x + y
 
 def subtrair(x, y):
-    """Retorna a subtração de y de x."""
     return x - y
 
 def multiplicar(x, y):
-    """Retorna a multiplicação de x por y."""
     return x * y
 
 def dividir(x, y):
-    """Retorna a divisão de x por y, com tratamento para divisão por zero."""
     if y == 0:
         return "Erro: Divisão por zero!"
     return x / y
 
 def potenciacao(x, y):
-    """Retorna x elevado à potência de y."""
     return x ** y
 
 def fatorial(x):
-    """Retorna x fatorial"""
     return math.factorial(int(x))
+
+def pitagoras(cat1, cat2, hip):
+    """Calcula o valor desconhecido (cateto ou hipotenusa) usando o Teorema de Pitágoras."""
+    if hip == 'x':
+        return (cat1 ** 2 + cat2 ** 2) ** 0.5
+    elif cat1 == 'x':
+        return (hip ** 2 - cat2 ** 2) ** 0.5
+    elif cat2 == 'x':
+        return (hip ** 2 - cat1 ** 2) ** 0.5
 
 # Interface da calculadora
 def calculadora():
@@ -38,16 +40,17 @@ def calculadora():
         print("4. Divisão")
         print("5. Potenciação")
         print("6. Fatorial")
-        print("7. Sair")
+        print("7. Teorema de Pitágoras")
+        print("8. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6/7): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8): ")
 
         # Sair do programa
-        if escolha == '7':
+        if escolha == '8':
             print("Saindo da calculadora...")
             break
 
-        # Verificar se a escolha é válida
+        # Operações com dois números
         if escolha in ['1', '2', '3', '4', '5']:
             try:
                 num1 = float(input("Digite o primeiro número: "))
@@ -56,7 +59,6 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite números.")
                 continue
 
-            # Executar a operação escolhida
             if escolha == '1':
                 print(f"Resultado: {adicionar(num1, num2)}")
             elif escolha == '2':
@@ -67,20 +69,43 @@ def calculadora():
                 print(f"Resultado: {dividir(num1, num2)}")
             elif escolha == '5':
                 print(f"Resultado: {potenciacao(num1, num2)}")
-        
+
+        # Fatorial
         elif escolha == '6':
             try:
-                num1 = int(input("Digite o número para calcular o fatorial: "))
-                if num1 < 0:
+                num = int(input("Digite o número para calcular o fatorial: "))
+                if num < 0:
                     print("Erro: Fatorial não é definido para números negativos.")
                     continue
+                print(f"Resultado: {fatorial(num)}")
             except ValueError:
                 print("Entrada inválida! Por favor, digite um número inteiro.")
-                continue
-            print(f"Resultado: {fatorial(num1)}")
-        
+
+        # Teorema de Pitágoras
+        elif escolha == '7':
+            try:
+                print("Atribua os valores da hipotenusa e catetos. Coloque 'x' para o valor desconhecido.")
+                hip = input("Digite a hipotenusa: ")
+                cat1 = input("Digite o cateto 1: ")
+                cat2 = input("Digite o cateto 2: ")
+
+                hip = float(hip) if hip != 'x' else 'x'
+                cat1 = float(cat1) if cat1 != 'x' else 'x'
+                cat2 = float(cat2) if cat2 != 'x' else 'x'
+
+                desconhecidos = [val for val in [hip, cat1, cat2] if val == 'x']
+                if len(desconhecidos) != 1:
+                    print("Erro: Deve haver exatamente um valor desconhecido (x).")
+                    continue
+
+                resultado = pitagoras(cat1, cat2, hip)
+                print(f"O outro valor é: {resultado}")
+            except ValueError:
+                print("Entrada inválida! Por favor, digite números ou 'x' para o valor desconhecido.")
+
         else:
             print("Opção inválida! Tente novamente.")
+
 
 # Executar a calculadora
 if __name__ == "__main__":
