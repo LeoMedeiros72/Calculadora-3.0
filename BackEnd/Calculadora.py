@@ -30,6 +30,13 @@ def pitagoras(cat1, cat2, hip):
     elif cat2 == 'x':
         return (hip ** 2 - cat1 ** 2) ** 0.5
 
+def equacao_primeiro_grau(a, b):
+    """Resolve a equação do primeiro grau ax + b = 0."""
+    if a == 0:
+        return "Erro: Coeficiente 'a' não pode ser zero."
+    x = -b / a
+    return x
+
 # Interface da calculadora
 def calculadora():
     while True:
@@ -41,12 +48,13 @@ def calculadora():
         print("5. Potenciação")
         print("6. Fatorial")
         print("7. Teorema de Pitágoras")
-        print("8. Sair")
+        print("8. Equação do primeiro grau")
+        print("9. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9): ")
 
         # Sair do programa
-        if escolha == '8':
+        if escolha == '9':
             print("Saindo da calculadora...")
             break
 
@@ -102,6 +110,17 @@ def calculadora():
                 print(f"O outro valor é: {resultado}")
             except ValueError:
                 print("Entrada inválida! Por favor, digite números ou 'x' para o valor desconhecido.")
+
+        # Equação do primeiro grau
+        elif escolha == '8':
+            try:
+                print("Atribua os valores da equação na forma Ax + B = 0")
+                a = float(input("Digite o valor de A: "))
+                b = float(input("Digite o valor de B: "))
+                resultado = equacao_primeiro_grau(a, b)
+                print(f"O valor de x é: {resultado}")
+            except ValueError:
+                print("Entrada inválida! Por favor, digite números.")
 
         else:
             print("Opção inválida! Tente novamente.")
