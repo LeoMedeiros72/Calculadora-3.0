@@ -1,6 +1,6 @@
 # Calculadora em Python
 
-Este é um projeto simples de uma calculadora em Python que realiza operações básicas como adição, subtração, multiplicação, divisão, potenciação, fatorial e teorema de Pitágoras. O projeto foi desenvolvido para fins educacionais e pode ser expandido com mais funcionalidades.
+Este é um projeto simples de uma calculadora em Python que realiza operações básicas como adição, subtração, multiplicação, divisão, potenciação, fatorial, teorema de Pitágoras e funções do primeiro grau. O projeto foi desenvolvido para fins educacionais e pode ser expandido com mais funcionalidades.
 
 ## Funcionalidades
 
@@ -11,6 +11,7 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 - **Potenciação**: Calcula a potência de um número elevado a outro.
 - **Fatorial**: Calcula o fatorial de um número.
 - **Teorema de Pitágoras**: Calcula o valor de cateto ou hipotenusa a partir de dois valores digitados.
+- **Função do primeiro grau**: Calcula o valor de X na função do primeiro grau.
 ## Como Usar
 
 1. Clone o repositório:
