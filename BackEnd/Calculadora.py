@@ -2,23 +2,29 @@ import math
 
 # Funções matemáticas
 def adicionar(x, y):
+    """Calcula a soma de dois números"""
     return x + y
 
 def subtrair(x, y):
+    """Calcula a subtração de dois números"""
     return x - y
 
 def multiplicar(x, y):
+    """Calcula a multiplicação de dois números"""
     return x * y
 
 def dividir(x, y):
+    """Calcula a divisão de dois números"""
     if y == 0:
         return "Erro: Divisão por zero!"
     return x / y
 
 def potenciacao(x, y):
+    """Calcula a potenciação de dois números"""
     return x ** y
 
 def fatorial(x):
+    """Calcula o fatorial de um número"""
     return math.factorial(int(x))
 
 def pitagoras(cat1, cat2, hip):
@@ -37,7 +43,36 @@ def equacao_primeiro_grau(a, b):
     x = -b / a
     return x
 
-# Interface da calculadora
+def equacao_segundo_grau(a, b, c):
+    """Resolve uma equação do segundo grau do tipo ax² + bx + c = 0."""
+    if a == 0:
+        return "Erro: Coeficiente 'a' não pode ser zero."
+    
+    delta = b ** 2 - 4 * a * c
+    print(f"Discriminante (Delta): {delta}")
+
+    if delta < 0:
+        print("A função não possui raízes reais.")
+        x1 = x2 = None
+    elif delta == 0:
+        x1 = x2 = -b / (2 * a)
+        print(f"A função possui uma raiz real dupla: x1 = x2 = {x1:.2f}")
+    else:
+        x1 = (-b + math.sqrt(delta)) / (2 * a)
+        x2 = (-b - math.sqrt(delta)) / (2 * a)
+        print(f"A função possui duas raízes reais diferentes: x1 = {x1:.2f} e x2 = {x2:.2f}")
+    
+    xv = -b / (2 * a)
+    yv = -delta / (4 * a)
+    print(f"O vértice da parábola é: ({xv:.2f}, {yv:.2f})")
+    
+    return {
+        "Delta": delta,
+        "raízes": (x1, x2),
+        "vértice": (xv, yv),
+    }
+
+# Ajustar lógica de saída
 def calculadora():
     while True:
         print("\nSelecione a operação:")
@@ -49,12 +84,13 @@ def calculadora():
         print("6. Fatorial")
         print("7. Teorema de Pitágoras")
         print("8. Equação do primeiro grau")
-        print("9. Sair")
+        print("9. Equação do segundo grau")
+        print("10. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10): ")
 
         # Sair do programa
-        if escolha == '9':
+        if escolha == '10':
             print("Saindo da calculadora...")
             break
 
@@ -122,9 +158,21 @@ def calculadora():
             except ValueError:
                 print("Entrada inválida! Por favor, digite números.")
 
+        
+        # Equação do segundo grau
+        elif escolha == '9':
+            try:
+                print("Atribua os valores da equação na forma Ax² + Bx + C = 0")
+                a = float(input("Digite o valor de A: "))
+                b = float(input("Digite o valor de B: "))
+                c = float(input("Digite o valor de C: "))
+                resultado = equacao_segundo_grau(a, b, c)
+                print(f"Os valores da função são: {resultado}")
+            except ValueError:
+                print("Entrada inválida! Por favor, digite números.")
+
         else:
             print("Opção inválida! Tente novamente.")
-
 
 # Executar a calculadora
 if __name__ == "__main__":
