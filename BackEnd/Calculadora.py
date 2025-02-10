@@ -27,6 +27,15 @@ def fatorial(x):
     """Calcula o fatorial de um número"""
     return math.factorial(int(x))
 
+def logaritmo(x, base=None):
+    """Calcula o logaritmo de x na base especificada. Se a base não for fornecida, retorna o logaritmo natural."""
+    if base is None:
+        return math.log(x)  
+    else:
+        if base <= 0 or base == 1:
+            return "Erro: A base deve ser positiva e diferente de 1."
+        return math.log(x, base)  
+
 def pitagoras(cat1, cat2, hip):
     """Calcula o valor desconhecido (cateto ou hipotenusa) usando o Teorema de Pitágoras."""
     if hip == 'x':
@@ -47,7 +56,7 @@ def equacao_segundo_grau(a, b, c):
     """Resolve uma equação do segundo grau do tipo ax² + bx + c = 0."""
     if a == 0:
         return "Erro: Coeficiente 'a' não pode ser zero."
-    
+
     delta = b ** 2 - 4 * a * c
     print(f"Discriminante (Delta): {delta}")
 
@@ -61,11 +70,11 @@ def equacao_segundo_grau(a, b, c):
         x1 = (-b + math.sqrt(delta)) / (2 * a)
         x2 = (-b - math.sqrt(delta)) / (2 * a)
         print(f"A função possui duas raízes reais diferentes: x1 = {x1:.2f} e x2 = {x2:.2f}")
-    
+
     xv = -b / (2 * a)
     yv = -delta / (4 * a)
     print(f"O vértice da parábola é: ({xv:.2f}, {yv:.2f})")
-    
+
     return {
         "Delta": delta,
         "raízes": (x1, x2),
@@ -82,15 +91,16 @@ def calculadora():
         print("4. Divisão")
         print("5. Potenciação")
         print("6. Fatorial")
-        print("7. Teorema de Pitágoras")
-        print("8. Equação do primeiro grau")
-        print("9. Equação do segundo grau")
-        print("10. Sair")
+        print("7. Logaritmo")
+        print("8. Teorema de Pitágoras")
+        print("9. Equação do primeiro grau")
+        print("10. Equação do segundo grau")
+        print("11. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11): ")
 
         # Sair do programa
-        if escolha == '10':
+        if escolha == '11':
             print("Saindo da calculadora...")
             break
 
@@ -125,8 +135,22 @@ def calculadora():
             except ValueError:
                 print("Entrada inválida! Por favor, digite um número inteiro.")
 
-        # Teorema de Pitágoras
+        # Logaritmo
         elif escolha == '7':
+            try:
+                x = float(input("Digite o valor de x (logaritmando): "))
+                base = input("Digite o valor da base (deixe em branco para logaritmo natural): ")
+                if base == '':
+                    resultado = logaritmo(x)
+                else:
+                    base = float(base)
+                    resultado = logaritmo(x, base)
+                print(f"Resultado: {resultado}")
+            except ValueError:
+                print("Entrada inválida! Por favor, digite números.")
+
+        # Teorema de Pitágoras
+        elif escolha == '8':
             try:
                 print("Atribua os valores da hipotenusa e catetos. Coloque 'x' para o valor desconhecido.")
                 hip = input("Digite a hipotenusa: ")
@@ -148,7 +172,7 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite números ou 'x' para o valor desconhecido.")
 
         # Equação do primeiro grau
-        elif escolha == '8':
+        elif escolha == '9':
             try:
                 print("Atribua os valores da equação na forma Ax + B = 0")
                 a = float(input("Digite o valor de A: "))
@@ -158,9 +182,8 @@ def calculadora():
             except ValueError:
                 print("Entrada inválida! Por favor, digite números.")
 
-        
         # Equação do segundo grau
-        elif escolha == '9':
+        elif escolha == '10':
             try:
                 print("Atribua os valores da equação na forma Ax² + Bx + C = 0")
                 a = float(input("Digite o valor de A: "))
