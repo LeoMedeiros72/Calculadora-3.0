@@ -14,13 +14,83 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 - **Teorema de Pitágoras**: Calcula o valor de cateto ou hipotenusa a partir de dois valores digitados.
 - **Equação do primeiro grau**: Calcula o valor de X na equação do primeiro grau.
 - **Equação do segundo grau**: Calcula o valor das raízes, discriminante (delta) e vértices da parábola.
+  
 ## Como Usar
+
+### Para executar a calculadora, use o seguinte comando:
+
+   ```bash
+   python calculadora.py
+```
+
+###   Após isso selecione o número que está relacionado a operação que deseja efetuar:
+
+**1. Adição**
+
+**2. Subtração**
+
+**3. Multiplicação**
+
+**4. Divisão"**
+
+**5. Potenciação**
+
+**6. Fatorial**
+
+**7. Logaritmo**
+
+**8. Teorema de Pitágoras**
+
+**9. Equação do primeiro grau**
+
+**10. Equação do segundo grau**
+
+###   Para sair da calculadora digite o núemro abaixo:   
+
+**11. Sair**
+        
+## Instalação
 
 1. Clone o repositório:
 
    ```bash
    git clone https://github.com/LeoMedeiros72/Calculadora-3.0.git
    cd Calculadora-3.0
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de que você tem os seguintes requisitos instalados:
+
+- Python 3.x
+
+- Módulo math (já incluso na biblioteca padrão do Python)
+
+## Exemplos de uso
+
+### Adição
+#### Entrada
+Digite o primeiro número: 5
+
+Digite o segundo número: 3
+#### Saída
+Resultado: 8
+
+### Fatorial
+#### Entrada
+Digite o número para calcular o fatorial: 5
+#### Saída
+Resultado: 120
+
+### Equação do segundo grau
+#### Entrada
+Digite o valor de A: 1
+Digite o valor de B: -3
+Digite o valor de C: 2
+#### Saída
+Discriminante (Delta): 1.0
+A função possui duas raízes reais diferentes: x1 = 2.00 e x2 = 1.00
+O vértice da parábola é: (1.50, -0.25)
+
 
 ## Licença
 
