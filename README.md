@@ -10,6 +10,7 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 - **Divisão**: Divide o primeiro número pelo segundo (com tratamento de divisão por zero).
 - **Potenciação**: Calcula a potência de um número elevado a outro.
 - **Fatorial**: Calcula o fatorial de um número.
+- **Logaritmo**: Calcula o logaritmo natural ou logaritmo de base específica.
 - **Teorema de Pitágoras**: Calcula o valor de cateto ou hipotenusa a partir de dois valores digitados.
 - **Equação do primeiro grau**: Calcula o valor de X na equação do primeiro grau.
 - **Equação do segundo grau**: Calcula o valor das raízes, discriminante (delta) e vértices da parábola.
