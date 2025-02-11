@@ -1,4 +1,6 @@
 import math
+import matplotlib.pyplot as plt
+import numpy as np
 
 # Funções matemáticas
 def adicionar(x, y):
@@ -103,6 +105,53 @@ def trigonometria(x, em_graus=True):
 
     print(f"O seno de {x:.2f} radianos é {seno:.2f}, o cosseno é {cosseno:.2f} e a tangente é {tangente:.2f}")
 
+
+def plotar_funcao_primeiro_grau(a, b):
+    """
+    Plota o gráfico da função do primeiro grau ax + b e mostra os pontos de corte com os eixos.
+
+    Parâmetros:
+    a (float): Coeficiente angular.
+    b (float): Coeficiente linear.
+    """
+    # Define o intervalo de valores para x
+    x = np.linspace(-10, 10, 400)  # Gera 400 pontos entre -10 e 10
+    y = a * x + b  # Calcula os valores de y
+
+    # Calcula os pontos de corte com os eixos
+    corte_x = (-b / a, 0) if a != 0 else None  # Corte com o eixo x
+    corte_y = (0, b)  # Corte com o eixo y
+
+    # Configura o gráfico
+    plt.figure(figsize=(8, 6))
+    plt.plot(x, y, label=f"y = {a}x + {b}", color="blue")
+
+    # Destaca os pontos de corte
+    if corte_x:
+        plt.scatter(*corte_x, color="red", label=f"Corte com eixo x: ({corte_x[0]:.2f}, 0)")
+    plt.scatter(*corte_y, color="green", label=f"Corte com eixo y: (0, {corte_y[1]:.2f})")
+
+    # Linhas de referência (eixos x e y)
+    plt.axhline(0, color="black", linewidth=0.5)  # Linha horizontal no y=0
+    plt.axvline(0, color="black", linewidth=0.5)  # Linha vertical no x=0
+
+    # Título e legendas
+    plt.title(f"Gráfico da Função do Primeiro Grau: y = {a}x + {b}")
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.grid(True)
+    plt.legend()
+    plt.show()
+
+    # Exibe as coordenadas no terminal
+    print("\nCoordenadas de Corte:")
+    if corte_x:
+        print(f"Corte com o eixo x: ({corte_x[0]:.2f}, 0)")
+    else:
+        print("A função não corta o eixo x (reta horizontal).")
+    print(f"Corte com o eixo y: (0, {corte_y[1]:.2f})")
+
+
 # Ajustar lógica de saída
 def calculadora():
     while True:
@@ -118,12 +167,13 @@ def calculadora():
         print("9. Equação do primeiro grau")
         print("10. Equação do segundo grau")
         print("11. Seno, Cosseno e Tangente")
-        print("12. Sair")
+        print("12. Função do primeiro grau (gráfico)")
+        print("13. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12/13): ")
 
         # Sair do programa
-        if escolha == '12':
+        if escolha == '13':
             print("Saindo da calculadora...")
             break
 
@@ -227,6 +277,16 @@ def calculadora():
                 resultado = trigonometria(x, em_graus)
             except ValueError:
                 print("Entrada inválida! Por favor, digite um número.")
+
+        # Gráfico de Função do Primeiro Grau
+        elif escolha == '12':
+            try:
+                print("Atribua os valores da função na forma y = Ax + B")
+                a = float(input("Digite o valor de A (coeficiente angular): "))
+                b = float(input("Digite o valor de B (coeficiente linear): "))
+                plotar_funcao_primeiro_grau(a, b)
+            except ValueError:
+                print("Entrada inválida! Por favor, digite números.")
 
         else:
             print("Opção inválida! Tente novamente.")
