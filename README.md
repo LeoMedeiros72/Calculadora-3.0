@@ -1,6 +1,6 @@
 # Calculadora em Python
 
-Este é um projeto simples de uma calculadora em Python que realiza operações básicas como adição, subtração, multiplicação, divisão, potenciação, fatorial, teorema de Pitágoras, funções do primeiro e segundo grau. O projeto foi desenvolvido para fins educacionais e pode ser expandido com mais funcionalidades.
+Este é um projeto simples de uma calculadora em Python que realiza operações básicas como adição, subtração, multiplicação, divisão, potenciação, fatorial, teorema de Pitágoras, funções do primeiro e segundo grau, trigonometria (seno, cosseno e tangente), logaritmo natural e com base diferente. O projeto foi desenvolvido para fins educacionais e pode ser expandido com mais funcionalidades.
 
 ## Funcionalidades
 
@@ -14,6 +14,7 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 - **Teorema de Pitágoras**: Calcula o valor de cateto ou hipotenusa a partir de dois valores digitados.
 - **Equação do primeiro grau**: Calcula o valor de X na equação do primeiro grau.
 - **Equação do segundo grau**: Calcula o valor das raízes, discriminante (delta) e vértices da parábola.
+- **Trigonometria**: Calcula o valor do seno, cosseno e tangente do ângulo digitado. 
   
 ## Como Usar
 
@@ -45,9 +46,11 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 
 **10. Equação do segundo grau**
 
+**11. Seno, Cosseno e Tangente**
+
 ###   Para sair da calculadora digite o núemro abaixo:   
 
-**11. Sair**
+**12. Sair**
         
 ## Instalação
 
