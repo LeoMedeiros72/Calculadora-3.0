@@ -64,7 +64,7 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 
 Antes de começar, certifique-se de que você tem os seguintes requisitos instalados:
 
-- Python 3.x
+- Python 3.12
 
 - Módulo math (já incluso na biblioteca padrão do Python)
 
