@@ -30,11 +30,11 @@ def fatorial(x):
 def logaritmo(x, base=None):
     """Calcula o logaritmo de x na base especificada. Se a base não for fornecida, retorna o logaritmo natural."""
     if base is None:
-        return math.log(x)  
+        return math.log(x)
     else:
         if base <= 0 or base == 1:
             return "Erro: A base deve ser positiva e diferente de 1."
-        return math.log(x, base)  
+        return math.log(x, base)
 
 def pitagoras(cat1, cat2, hip):
     """Calcula o valor desconhecido (cateto ou hipotenusa) usando o Teorema de Pitágoras."""
@@ -81,6 +81,28 @@ def equacao_segundo_grau(a, b, c):
         "vértice": (xv, yv),
     }
 
+import math
+
+def trigonometria(x, em_graus=True):
+    """
+    Calcula o seno, cosseno e tangente de um ângulo.
+
+    Parâmetros:
+    x (float): O valor do ângulo.
+    em_graus (bool): Se True, o ângulo é considerado em graus. Se False, em radianos.
+
+    Retorna:
+    dict: Um dicionário contendo o seno, cosseno e tangente do ângulo.
+    """
+    if em_graus:
+        x = math.radians(x)  # Converte graus para radianos
+
+    seno = math.sin(x)
+    cosseno = math.cos(x)
+    tangente = math.tan(x)
+
+    print(f"O seno de {x:.2f} radianos é {seno:.2f}, o cosseno é {cosseno:.2f} e a tangente é {tangente:.2f}")
+
 # Ajustar lógica de saída
 def calculadora():
     while True:
@@ -95,12 +117,13 @@ def calculadora():
         print("8. Teorema de Pitágoras")
         print("9. Equação do primeiro grau")
         print("10. Equação do segundo grau")
-        print("11. Sair")
+        print("11. Seno, Cosseno e Tangente")
+        print("12. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12): ")
 
         # Sair do programa
-        if escolha == '11':
+        if escolha == '12':
             print("Saindo da calculadora...")
             break
 
@@ -194,8 +217,20 @@ def calculadora():
             except ValueError:
                 print("Entrada inválida! Por favor, digite números.")
 
+        # Trigonometria
+          
+        elif escolha == '11':
+            try:
+                print("Atribua o valor do ângulo: ")
+                x = float(input("Digite o valor do ângulo: "))
+                em_graus = input("O ângulo está em graus? (s/n): ").strip().lower() == 's'
+                resultado = trigonometria(x, em_graus)
+            except ValueError:
+                print("Entrada inválida! Por favor, digite um número.")
+
         else:
             print("Opção inválida! Tente novamente.")
+            
 
 # Executar a calculadora
 if __name__ == "__main__":
