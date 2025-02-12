@@ -61,7 +61,7 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 ![image](https://github.com/user-attachments/assets/3e662016-abc8-4210-8305-01fa5bd4feda)
 
         
-## Instalação
+## 🚀 Instalação
 
 1. Clone o repositório:
 
@@ -69,15 +69,21 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
    git clone https://github.com/LeoMedeiros72/Calculadora-3.0.git
    cd Calculadora-3.0
 
-## Pré-requisitos
+## 🛠 Pré-requisitos
 
 Antes de começar, certifique-se de que você tem os seguintes requisitos instalados:
 
 - Python 3.12
 
-- Módulo math (já incluso na biblioteca padrão do Python)
+- Math (biblioteca padrão do Python)
 
-## Exemplos de uso
+- Matplotlib (para geração de gráficos)
+
+- SymPy (para cálculos algébricos, se aplicável)
+
+Se alguma dessas bibliotecas precisar ser instalada separadamente, adicione isso na seção de instalação.
+
+## 📌 Exemplos de uso
 
 ### Adição
 #### Entrada
@@ -104,6 +110,12 @@ A função possui duas raízes reais diferentes: x1 = 2.00 e x2 = 1.00
 O vértice da parábola é: (1.50, -0.25)
 
 
-## Licença
+## 📂 Licença
 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 📞 Contato
+Adicione formas de contato caso alguém tenha dúvidas ou sugestões:
+
+📧 Email: xorao.lsm@gmail.com
+🔗 GitHub: github.com/LeoMedeiros72
