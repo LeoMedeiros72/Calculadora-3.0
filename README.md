@@ -57,6 +57,9 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 ###   Para sair da calculadora digite o núemro abaixo:   
 
 **14. Sair**
+
+![image](https://github.com/user-attachments/assets/3e662016-abc8-4210-8305-01fa5bd4feda)
+
         
 ## Instalação
 
