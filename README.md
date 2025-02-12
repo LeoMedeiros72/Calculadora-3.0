@@ -108,11 +108,15 @@ Digite o segundo número: 3
 #### Saída
 Resultado: 8
 
+![image](https://github.com/user-attachments/assets/8457317d-a201-43f6-a6d2-095a1119d794)
+
 ### Fatorial
 #### Entrada
 Digite o número para calcular o fatorial: 5
 #### Saída
 Resultado: 120
+
+![image](https://github.com/user-attachments/assets/bf730e36-12da-4eda-8a67-14bf7ddf392f)
 
 ### Equação do segundo grau
 #### Entrada
@@ -123,6 +127,8 @@ Digite o valor de C: 2
 Discriminante (Delta): 1.0
 A função possui duas raízes reais diferentes: x1 = 2.00 e x2 = 1.00
 O vértice da parábola é: (1.50, -0.25)
+
+![image](https://github.com/user-attachments/assets/6c9cb919-7113-4076-a4e5-c78a24839752)
 
 ## Roadmap
 
