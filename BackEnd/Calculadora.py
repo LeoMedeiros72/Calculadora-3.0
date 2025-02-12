@@ -152,7 +152,73 @@ def plotar_funcao_primeiro_grau(a, b):
     print(f"Corte com o eixo y: (0, {corte_y[1]:.2f})")
 
 
-# Ajustar lógica de saída
+def plotar_funcao_segundo_grau(a, b, c):
+    """
+    Plota o gráfico da função do segundo grau ax² + bx + c e mostra o vértice e os pontos de corte com os eixos.
+
+    Parâmetros:
+    a (float): Coeficiente quadrático.
+    b (float): Coeficiente linear.
+    c (float): Coeficiente constante.
+    """
+    if a == 0:
+        print("Erro: O coeficiente 'a' não pode ser zero para uma função do segundo grau.")
+        return
+
+    x = np.linspace(-10, 10, 400) 
+    y = a * x**2 + b * x + c  
+
+    xv = -b / (2 * a)
+    yv = a * xv**2 + b * xv + c
+
+    corte_y = (0, c)
+
+    delta = b**2 - 4 * a * c
+    if delta < 0:
+        print("A função não corta o eixo x (não há raízes reais).")
+        cortes_x = None
+    elif delta == 0:
+        x1 = -b / (2 * a)
+        cortes_x = [(x1, 0)]
+        print(f"A função toca o eixo x em: ({x1:.2f}, 0)")
+    else:
+        x1 = (-b + math.sqrt(delta)) / (2 * a)
+        x2 = (-b - math.sqrt(delta)) / (2 * a)
+        cortes_x = [(x1, 0), (x2, 0)]
+        print(f"A função corta o eixo x em: ({x1:.2f}, 0) e ({x2:.2f}, 0)")
+
+    plt.figure(figsize=(8, 6))
+    plt.plot(x, y, label=f"y = {a}x² + {b}x + {c}", color="blue")
+
+    plt.scatter(xv, yv, color="red", label=f"Vértice: ({xv:.2f}, {yv:.2f})")
+
+    if cortes_x:
+        for corte in cortes_x:
+            plt.scatter(*corte, color="green", label=f"Corte com eixo x: ({corte[0]:.2f}, 0)")
+
+    plt.scatter(*corte_y, color="purple", label=f"Corte com eixo y: (0, {corte_y[1]:.2f})")
+
+    plt.axhline(0, color="black", linewidth=0.5)  
+    plt.axvline(0, color="black", linewidth=0.5)  
+
+    plt.title(f"Gráfico da Função do Segundo Grau: y = {a}x² + {b}x + {c}")
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.grid(True)
+    plt.legend()
+    plt.show()
+
+    print("\nCoordenadas:")
+    print(f"Vértice: ({xv:.2f}, {yv:.2f})")
+    if cortes_x:
+        for corte in cortes_x:
+            print(f"Corte com o eixo x: ({corte[0]:.2f}, 0)")
+    else:
+        print("A função não corta o eixo x.")
+    print(f"Corte com o eixo y: (0, {corte_y[1]:.2f})")
+
+
+# Ajustar o menu da calculadora
 def calculadora():
     while True:
         print("\nSelecione a operação:")
@@ -168,12 +234,13 @@ def calculadora():
         print("10. Equação do segundo grau")
         print("11. Seno, Cosseno e Tangente")
         print("12. Função do primeiro grau (gráfico)")
-        print("13. Sair")
+        print("13. Função do segundo grau (gráfico)")
+        print("14. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12/13): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12/13/14): ")
 
         # Sair do programa
-        if escolha == '13':
+        if escolha == '14':
             print("Saindo da calculadora...")
             break
 
@@ -268,7 +335,6 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite números.")
 
         # Trigonometria
-          
         elif escolha == '11':
             try:
                 print("Atribua o valor do ângulo: ")
@@ -288,9 +354,20 @@ def calculadora():
             except ValueError:
                 print("Entrada inválida! Por favor, digite números.")
 
+        # Gráfico de Função do Segundo Grau
+        elif escolha == '13':
+            try:
+                print("Atribua os valores da função na forma y = Ax² + Bx + C")
+                a = float(input("Digite o valor de A (coeficiente quadrático): "))
+                b = float(input("Digite o valor de B (coeficiente linear): "))
+                c = float(input("Digite o valor de C (coeficiente constante): "))
+                plotar_funcao_segundo_grau(a, b, c)
+            except ValueError:
+                print("Entrada inválida! Por favor, digite números.")
+
         else:
             print("Opção inválida! Tente novamente.")
-            
+
 
 # Executar a calculadora
 if __name__ == "__main__":
