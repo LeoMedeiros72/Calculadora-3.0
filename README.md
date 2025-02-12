@@ -16,6 +16,7 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 - **Equação do segundo grau**: Calcula o valor das raízes, discriminante (delta) e vértices da parábola.
 - **Trigonometria**: Calcula o valor do seno, cosseno e tangente do ângulo digitado.
 - **Função do primeiro grau**: Faz o gráfico da função mostrando os pontos de interseção tanto no eixo X quanto no Y.
+- **Função do segundo grau**: Faz o gráfico da função mostrando a parábola, o vértice e os pontos de interseção dos eixos X e Y (se existir).
   
 ## Como Usar
 
@@ -51,9 +52,11 @@ Este é um projeto simples de uma calculadora em Python que realiza operações 
 
 **12. Gráfico da função do primeiro grau**
 
+**13. Gráfico da função do segundo grau**
+
 ###   Para sair da calculadora digite o núemro abaixo:   
 
-**13. Sair**
+**14. Sair**
         
 ## Instalação
 
