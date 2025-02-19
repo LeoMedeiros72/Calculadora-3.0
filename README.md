@@ -83,7 +83,8 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 
 **15. Sair**
 
-![image](https://github.com/user-attachments/assets/3e662016-abc8-4210-8305-01fa5bd4feda)
+![image](https://github.com/user-attachments/assets/10874e0e-407f-4e3b-ada4-f8eb3f25ec74)
+
 
         
 ## 🚀 Instalação
