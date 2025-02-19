@@ -25,6 +25,24 @@ def potenciacao(x, y):
     """Calcula a potenciação de dois números"""
     return x ** y
 
+def raiz(x, y):
+    """
+    Calcula a raiz de um número x com índice y.
+    
+    Parâmetros:
+    x (float): O número do qual se deseja calcular a raiz.
+    y (int): O índice da raiz.
+    
+    Retorna:
+    float: O valor da raiz.
+    """
+    if y == 0:
+        return "Erro: O índice da raiz não pode ser zero."
+    if x < 0 and y % 2 == 0:
+        return "Erro: Não é possível calcular a raiz par de um número negativo."
+    return x ** (1 / y)
+      
+
 def fatorial(x):
     """Calcula o fatorial de um número"""
     return math.factorial(int(x))
@@ -165,8 +183,8 @@ def plotar_funcao_segundo_grau(a, b, c):
         print("Erro: O coeficiente 'a' não pode ser zero para uma função do segundo grau.")
         return
 
-    x = np.linspace(-10, 10, 400) 
-    y = a * x**2 + b * x + c  
+    x = np.linspace(-10, 10, 400)
+    y = a * x**2 + b * x + c
 
     xv = -b / (2 * a)
     yv = a * xv**2 + b * xv + c
@@ -198,8 +216,8 @@ def plotar_funcao_segundo_grau(a, b, c):
 
     plt.scatter(*corte_y, color="purple", label=f"Corte com eixo y: (0, {corte_y[1]:.2f})")
 
-    plt.axhline(0, color="black", linewidth=0.5)  
-    plt.axvline(0, color="black", linewidth=0.5)  
+    plt.axhline(0, color="black", linewidth=0.5)
+    plt.axvline(0, color="black", linewidth=0.5)
 
     plt.title(f"Gráfico da Função do Segundo Grau: y = {a}x² + {b}x + {c}")
     plt.xlabel("x")
@@ -227,20 +245,21 @@ def calculadora():
         print("3. Multiplicação")
         print("4. Divisão")
         print("5. Potenciação")
-        print("6. Fatorial")
-        print("7. Logaritmo")
-        print("8. Teorema de Pitágoras")
-        print("9. Equação do primeiro grau")
-        print("10. Equação do segundo grau")
-        print("11. Seno, Cosseno e Tangente")
-        print("12. Função do primeiro grau (gráfico)")
-        print("13. Função do segundo grau (gráfico)")
-        print("14. Sair")
+        print("6. Radiciação")
+        print("7. Fatorial")
+        print("8. Logaritmo")
+        print("9. Teorema de Pitágoras")
+        print("10. Equação do primeiro grau")
+        print("11. Equação do segundo grau")
+        print("12. Seno, Cosseno e Tangente")
+        print("13. Função do primeiro grau (gráfico)")
+        print("14. Função do segundo grau (gráfico)")
+        print("15. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12/13/14): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12/13/14/15): ")
 
         # Sair do programa
-        if escolha == '14':
+        if escolha == '15':
             print("Saindo da calculadora...")
             break
 
@@ -265,7 +284,7 @@ def calculadora():
                 print(f"Resultado: {potenciacao(num1, num2)}")
 
         # Fatorial
-        elif escolha == '6':
+        elif escolha == '7':
             try:
                 num = int(input("Digite o número para calcular o fatorial: "))
                 if num < 0:
@@ -276,7 +295,7 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite um número inteiro.")
 
         # Logaritmo
-        elif escolha == '7':
+        elif escolha == '8':
             try:
                 x = float(input("Digite o valor de x (logaritmando): "))
                 base = input("Digite o valor da base (deixe em branco para logaritmo natural): ")
@@ -290,7 +309,7 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite números.")
 
         # Teorema de Pitágoras
-        elif escolha == '8':
+        elif escolha == '9':
             try:
                 print("Atribua os valores da hipotenusa e catetos. Coloque 'x' para o valor desconhecido.")
                 hip = input("Digite a hipotenusa: ")
@@ -312,7 +331,7 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite números ou 'x' para o valor desconhecido.")
 
         # Equação do primeiro grau
-        elif escolha == '9':
+        elif escolha == '10':
             try:
                 print("Atribua os valores da equação na forma Ax + B = 0")
                 a = float(input("Digite o valor de A: "))
@@ -323,7 +342,7 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite números.")
 
         # Equação do segundo grau
-        elif escolha == '10':
+        elif escolha == '11':
             try:
                 print("Atribua os valores da equação na forma Ax² + Bx + C = 0")
                 a = float(input("Digite o valor de A: "))
@@ -335,7 +354,7 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite números.")
 
         # Trigonometria
-        elif escolha == '11':
+        elif escolha == '12':
             try:
                 print("Atribua o valor do ângulo: ")
                 x = float(input("Digite o valor do ângulo: "))
@@ -345,7 +364,7 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite um número.")
 
         # Gráfico de Função do Primeiro Grau
-        elif escolha == '12':
+        elif escolha == '13':
             try:
                 print("Atribua os valores da função na forma y = Ax + B")
                 a = float(input("Digite o valor de A (coeficiente angular): "))
@@ -355,13 +374,26 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite números.")
 
         # Gráfico de Função do Segundo Grau
-        elif escolha == '13':
+        elif escolha == '14':
             try:
                 print("Atribua os valores da função na forma y = Ax² + Bx + C")
                 a = float(input("Digite o valor de A (coeficiente quadrático): "))
                 b = float(input("Digite o valor de B (coeficiente linear): "))
                 c = float(input("Digite o valor de C (coeficiente constante): "))
                 plotar_funcao_segundo_grau(a, b, c)
+            except ValueError:
+                print("Entrada inválida! Por favor, digite números.")
+
+
+          
+        # Radiciação
+        elif escolha == '6':
+            try:
+                print("Atribua os valores da raiz, sendo o primeiro número a BASE e o segundo o ÍNDICE.")
+                x = float(input("Digite o valor da Base: "))
+                y = int(input("Digite o valor do Índice: "))
+                resultado = raiz(x, y)
+                print(f"A raiz de {x:.2f} com índice {y} é: {resultado:.2f}")
             except ValueError:
                 print("Entrada inválida! Por favor, digite números.")
 
