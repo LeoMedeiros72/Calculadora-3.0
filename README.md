@@ -31,6 +31,7 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 - **Multiplicação**: Multiplica dois números.
 - **Divisão**: Divide o primeiro número pelo segundo (com tratamento de divisão por zero).
 - **Potenciação**: Calcula a potência de um número elevado a outro.
+- **Radiciação**: Calcula a raiz de acordo com o número escolhido como base e o número escolhido como índice.
 - **Fatorial**: Calcula o fatorial de um número.
 - **Logaritmo**: Calcula o logaritmo natural ou logaritmo de base específica.
 - **Teorema de Pitágoras**: Calcula o valor de cateto ou hipotenusa a partir de dois valores digitados.
@@ -60,25 +61,27 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 
 **5. Potenciação**
 
-**6. Fatorial**
+**6. Radiciação**
 
-**7. Logaritmo**
+**7. Fatorial**
 
-**8. Teorema de Pitágoras**
+**8. Logaritmo**
 
-**9. Equação do primeiro grau**
+**9. Teorema de Pitágoras**
 
-**10. Equação do segundo grau**
+**10. Equação do primeiro grau**
 
-**11. Seno, Cosseno e Tangente**
+**11. Equação do segundo grau**
 
-**12. Gráfico da função do primeiro grau**
+**12. Seno, Cosseno e Tangente**
 
-**13. Gráfico da função do segundo grau**
+**13. Gráfico da função do primeiro grau**
+
+**14. Gráfico da função do segundo grau**
 
 ###   Para sair da calculadora digite o núemro abaixo:   
 
-**14. Sair**
+**15. Sair**
 
 ![image](https://github.com/user-attachments/assets/3e662016-abc8-4210-8305-01fa5bd4feda)
 
