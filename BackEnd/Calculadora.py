@@ -393,7 +393,7 @@ def calculadora():
                 x = float(input("Digite o valor da Base: "))
                 y = int(input("Digite o valor do Índice: "))
                 resultado = raiz(x, y)
-                print(f"A raiz de {x:.2f} com índice {y} é: {resultado:.2f}")
+                print(f"O resultado da {y}√{x} = {resultado:.2f}")
             except ValueError:
                 print("Entrada inválida! Por favor, digite números.")
 
