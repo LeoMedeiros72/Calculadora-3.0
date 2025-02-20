@@ -4,7 +4,7 @@
 
 # Calculadora em Python
 
-Este é um projeto simples de uma calculadora em Python que realiza operações básicas como adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, teorema de Pitágoras, funções e equações do primeiro e segundo grau (gráfico e cálculo), trigonometria (seno, cosseno e tangente), logaritmo natural e com base diferente, integral definida. Além de construir gráficos de funções do primeiro e segundo grau, assim como a coordenada de seus vértices. O projeto foi desenvolvido para fins educacionais e pode ser expandido com mais funcionalidades.
+Este é um projeto educacional desenvolvido em Python, que consiste em uma calculadora capaz de realizar operações matemáticas variadas, incluindo adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, além do cálculo do teorema de Pitágoras. Também abrange o estudo de funções e equações do 1º e 2º grau, permitindo a construção de gráficos e a determinação das coordenadas dos vértices. As funcionalidades incluem ainda cálculos trigonométricos (seno, cosseno e tangente), logaritmos naturais e de bases diversas, bem como integrais definidas. O projeto é flexível e pode ser expandido com novos recursos.
 
 ## Sobre o Projeto
 
