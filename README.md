@@ -40,6 +40,7 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 - **Trigonometria**: Calcula o valor do seno, cosseno e tangente do ângulo digitado.
 - **Função do primeiro grau**: Faz o gráfico da função mostrando os pontos de interseção tanto no eixo X quanto no Y.
 - **Função do segundo grau**: Faz o gráfico da função mostrando a parábola, o vértice e os pontos de interseção dos eixos X e Y (se existir).
+- **Integral Definida**: Calcula o valor da Integral a partir da função escrita e dos limites superior e inferior.
   
 ## Como Usar
 
@@ -79,9 +80,11 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 
 **14. Gráfico da função do segundo grau**
 
+**15. Integral Definida**
+
 ###   Para sair da calculadora digite o núemro abaixo:   
 
-**15. Sair**
+**16. Sair**
 
 ![image](https://github.com/user-attachments/assets/10874e0e-407f-4e3b-ada4-f8eb3f25ec74)
 
