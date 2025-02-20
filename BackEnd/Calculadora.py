@@ -1,6 +1,7 @@
 import math
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.integrate import quad  
 
 # Funções matemáticas
 def adicionar(x, y):
@@ -28,11 +29,11 @@ def potenciacao(x, y):
 def raiz(x, y):
     """
     Calcula a raiz de um número x com índice y.
-    
+
     Parâmetros:
     x (float): O número do qual se deseja calcular a raiz.
     y (int): O índice da raiz.
-    
+
     Retorna:
     float: O valor da raiz.
     """
@@ -41,7 +42,7 @@ def raiz(x, y):
     if x < 0 and y % 2 == 0:
         return "Erro: Não é possível calcular a raiz par de um número negativo."
     return x ** (1 / y)
-      
+
 
 def fatorial(x):
     """Calcula o fatorial de um número"""
@@ -236,6 +237,30 @@ def plotar_funcao_segundo_grau(a, b, c):
     print(f"Corte com o eixo y: (0, {corte_y[1]:.2f})")
 
 
+
+def integral(funcao_str, a, b):
+    """
+    Calcula a integral definida de uma função matemática.
+
+    Parâmetros:
+    funcao_str (str): A função matemática como uma string (ex: "x**2 + 3*x + 2").
+    a (float): Limite inferior de integração.
+    b (float): Limite superior de integração.
+
+    Retorna:
+    float: O valor da integral definida.
+    """
+    try:
+        # Define a função a partir da string fornecida
+        funcao = lambda x: eval(funcao_str, {"x": x, "math": math, "np": np})
+
+        # Calcula a integral definida
+        resultado, _ = quad(funcao, a, b)
+        return resultado
+    except Exception as e:
+        return f"Erro: {e}"
+
+
 # Ajustar o menu da calculadora
 def calculadora():
     while True:
@@ -254,12 +279,13 @@ def calculadora():
         print("12. Seno, Cosseno e Tangente")
         print("13. Função do primeiro grau (gráfico)")
         print("14. Função do segundo grau (gráfico)")
-        print("15. Sair")
+        print("15. Integral definida")
+        print("16. Sair")
 
         escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12/13/14/15): ")
 
         # Sair do programa
-        if escolha == '15':
+        if escolha == '16':
             print("Saindo da calculadora...")
             break
 
@@ -385,7 +411,7 @@ def calculadora():
                 print("Entrada inválida! Por favor, digite números.")
 
 
-          
+
         # Radiciação
         elif escolha == '6':
             try:
@@ -396,6 +422,18 @@ def calculadora():
                 print(f"O resultado da {y}√{x} = {resultado:.2f}")
             except ValueError:
                 print("Entrada inválida! Por favor, digite números.")
+
+
+      # Integral definida
+        elif escolha == '15':
+            try:
+                funcao_str = input("Digite a função (use 'x' como variável, ex: 'x**2 + 3*x + 2'): ")
+                a = float(input("Digite o limite inferior de integração (a): "))
+                b = float(input("Digite o limite superior de integração (b): "))
+                resultado = integral(funcao_str, a, b)
+                print(f"O valor da integral definida é: {resultado:.4f}")
+            except ValueError:
+                print("Entrada inválida! Por favor, digite números e uma função válida.")
 
         else:
             print("Opção inválida! Tente novamente.")
