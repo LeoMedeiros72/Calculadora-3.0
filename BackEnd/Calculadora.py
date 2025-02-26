@@ -1,7 +1,11 @@
+!pip install findiff
+
 import math
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.integrate import quad  
+from scipy.integrate import quad
+import findiff
+
 
 # Funções matemáticas
 def adicionar(x, y):
@@ -261,6 +265,40 @@ def integral(funcao_str, a, b):
         return f"Erro: {e}"
 
 
+def calcular_derivada(funcao_str, x0, dx=1e-6):
+    """
+    Calcula a derivada de uma função em um ponto específico usando diferenças finitas.
+
+    Parâmetros:
+    funcao_str (str): A função como uma string (ex: "x**2 + 3*x + 2").
+    x0 (float): O ponto onde a derivada será calculada.
+    dx (float): O passo para o cálculo numérico (opcional, padrão é 1e-6).
+
+    Retorna:
+    float: O valor da derivada no ponto x0.
+    """
+    try:
+        # Verifica se o x0 é numérico
+        x0 = float(x0)
+
+        # Verifica se a função é uma string válida
+        if not isinstance(funcao_str, str):
+            raise ValueError("A função precisa ser fornecida como uma string.")
+
+        # Define a função a partir da string fornecida
+        funcao = lambda x: eval(funcao_str, {"x": x, "math": math, "np": np})
+
+        # Aproximação da derivada usando a fórmula de diferenças finitas centrais
+        derivada = (funcao(x0 + dx) - funcao(x0 - dx)) / (2 * dx)
+        
+        return derivada
+    except ValueError as e:
+        return f"Erro de valor: {e}"
+    except Exception as e:
+        return f"Erro: {e}"
+
+
+
 # Ajustar o menu da calculadora
 def calculadora():
     while True:
@@ -280,12 +318,13 @@ def calculadora():
         print("13. Função do primeiro grau (gráfico)")
         print("14. Função do segundo grau (gráfico)")
         print("15. Integral definida")
-        print("16. Sair")
+        print("16. Derivada")
+        print("17. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12/13/14/15): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17): ")
 
         # Sair do programa
-        if escolha == '16':
+        if escolha == '17':
             print("Saindo da calculadora...")
             break
 
@@ -435,8 +474,19 @@ def calculadora():
             except ValueError:
                 print("Entrada inválida! Por favor, digite números e uma função válida.")
 
+
+      # Derivada
+        elif escolha == '16': 
+            try:
+                funcao_str = input("Digite a função (use 'x' como variável, ex: 'x**2 + 3*x + 2'): ")
+                x0 = float(input("Digite o ponto onde a derivada será calculada (x0): "))
+                resultado = calcular_derivada(funcao_str, x0)
+                print(f"O valor da derivada no ponto {x0} é: {resultado:.4f}")
+            except ValueError:
+                print("Entrada inválida! Por favor, digite números e uma função válida.")
+
         else:
-            print("Opção inválida! Tente novamente.")
+                    print("Opção inválida! Tente novamente.")
 
 
 # Executar a calculadora
