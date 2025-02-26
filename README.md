@@ -10,7 +10,7 @@ Este é um projeto educacional desenvolvido em Python, que consiste em uma calcu
 
 Este projeto foi desenvolvido como uma calculadora multifuncional em Python, com o objetivo de auxiliar estudantes e entusiastas de matemática a realizar cálculos básicos e avançados de forma simples e intuitiva. Além das operações matemáticas tradicionais, a calculadora também inclui funcionalidades como gráficos de funções, resolução de equações e cálculos trigonométricos.
 
-O projeto foi criado para fins educacionais, com o intuito de demonstrar a aplicação de conceitos de programação em Python, como funções, manipulação de bibliotecas (como `math` , `matplotlib` e `numpy`) e estruturas de controle.
+O projeto foi criado para fins educacionais, com o intuito de demonstrar a aplicação de conceitos de programação em Python, como funções, manipulação de bibliotecas (como `math` , `matplotlib`, `numpy`, `scipy.integrate` e `findiff`) e estruturas de controle.
 
 ## Contribuição
 
