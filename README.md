@@ -4,7 +4,7 @@
 
 # Calculadora em Python
 
-Este é um projeto educacional desenvolvido em Python, que consiste em uma calculadora capaz de realizar operações matemáticas variadas, incluindo adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, além do cálculo do teorema de Pitágoras. Também abrange o estudo de funções e equações do 1º e 2º grau, permitindo a construção de gráficos e a determinação das coordenadas dos vértices. As funcionalidades incluem ainda cálculos trigonométricos (seno, cosseno e tangente), logaritmos naturais e de bases diversas, bem como integrais definidas. O projeto é flexível e pode ser expandido com novos recursos.
+Este é um projeto educacional desenvolvido em Python, que consiste em uma calculadora capaz de realizar operações matemáticas variadas, incluindo adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, além do cálculo do teorema de Pitágoras. Também abrange o estudo de funções e equações do 1º e 2º grau, permitindo a construção de gráficos e a determinação das coordenadas dos vértices. As funcionalidades incluem ainda cálculos trigonométricos (seno, cosseno e tangente), logaritmos naturais e de bases diversas, bem como integrais definidas e derivadas. O projeto é flexível e pode ser expandido com novos recursos.
 
 ## Sobre o Projeto
 
@@ -41,6 +41,7 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 - **Função do primeiro grau**: Faz o gráfico da função mostrando os pontos de interseção tanto no eixo X quanto no Y.
 - **Função do segundo grau**: Faz o gráfico da função mostrando a parábola, o vértice e os pontos de interseção dos eixos X e Y (se existir).
 - **Integral Definida**: Calcula o valor da Integral a partir da função escrita e dos limites superior e inferior.
+- **Derivada**: Calcula o valor da derivada a partir da função escrita e do ponto de derivada.
   
 ## Como Usar
 
@@ -82,12 +83,13 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 
 **15. Integral Definida**
 
+**16. Derivada**
+
 ###   Para sair da calculadora digite o núemro abaixo:   
 
-**16. Sair**
+**17. Sair**
 
-![image](https://github.com/user-attachments/assets/10874e0e-407f-4e3b-ada4-f8eb3f25ec74)
-
+![image](https://github.com/user-attachments/assets/f076a4e9-c160-4729-823a-ac0278ee0457)
 
         
 ## 🚀 Instalação
@@ -143,7 +145,7 @@ O vértice da parábola é: (1.50, -0.25)
 - [x] Implementar gráficos de funções do primeiro e segundo grau.
 - [ ] Adicionar suporte para números complexos.
 - [ ] Implementar uma interface gráfica (GUI) usando Tkinter.
-- [ ] Adicionar suporte para cálculos de derivadas e integrais.
+- [x] Adicionar suporte para cálculos de derivadas e integrais.
 
 ## 📂 Licença
 
