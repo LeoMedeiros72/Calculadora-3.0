@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.integrate import quad
 import findiff
+import statistics
 
 
 # Funções matemáticas
@@ -290,12 +291,36 @@ def calcular_derivada(funcao_str, x0, dx=1e-6):
 
         # Aproximação da derivada usando a fórmula de diferenças finitas centrais
         derivada = (funcao(x0 + dx) - funcao(x0 - dx)) / (2 * dx)
-        
+
         return derivada
     except ValueError as e:
         return f"Erro de valor: {e}"
     except Exception as e:
         return f"Erro: {e}"
+
+
+def calcular_estatisticas():
+    """
+    Solicita ao usuário uma lista de números separados por vírgula e calcula medidas estatísticas.
+    Retorna um dicionário contendo os valores calculados.
+    """
+    entrada = input("Digite os números separados por vírgula: ")
+    
+    try:
+        numeros = [float(num.strip()) for num in entrada.split(",")]
+
+        estatisticas = {
+            "Média": statistics.mean(numeros),
+            "Mediana": statistics.median(numeros),
+            "Moda": statistics.multimode(numeros), 
+            "Variância": statistics.variance(numeros) if len(numeros) > 1 else 0,
+            "Desvio Padrão": statistics.stdev(numeros) if len(numeros) > 1 else 0
+        }
+
+        return estatisticas
+
+    except ValueError:
+        return "Erro: Entrada inválida! Digite apenas números separados por vírgula."
 
 
 
@@ -319,12 +344,13 @@ def calculadora():
         print("14. Função do segundo grau (gráfico)")
         print("15. Integral definida")
         print("16. Derivada")
-        print("17. Sair")
+        print("17. Média, Moda, Variância, Desvio Padrão e Mediana")
+        print("18. Sair")
 
-        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18): ")
 
         # Sair do programa
-        if escolha == '17':
+        if escolha == '18':
             print("Saindo da calculadora...")
             break
 
@@ -476,7 +502,7 @@ def calculadora():
 
 
       # Derivada
-        elif escolha == '16': 
+        elif escolha == '16':
             try:
                 funcao_str = input("Digite a função (use 'x' como variável, ex: 'x**2 + 3*x + 2'): ")
                 x0 = float(input("Digite o ponto onde a derivada será calculada (x0): "))
@@ -485,9 +511,18 @@ def calculadora():
             except ValueError:
                 print("Entrada inválida! Por favor, digite números e uma função válida.")
 
-        else:
-                    print("Opção inválida! Tente novamente.")
 
+      #Estatística
+        elif escolha == "17":
+            resultado = calcular_estatisticas()
+            if isinstance(resultado, dict):
+                for chave, valor in resultado.items():
+                    print(f"{chave}: {valor}")
+            else:
+                print(resultado)
+        
+        else:
+            print("Opção inválida! Tente novamente.")
 
 # Executar a calculadora
 if __name__ == "__main__":
