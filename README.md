@@ -42,6 +42,7 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 - **Função do segundo grau**: Faz o gráfico da função mostrando a parábola, o vértice e os pontos de interseção dos eixos X e Y (se existir).
 - **Integral Definida**: Calcula o valor da Integral a partir da função escrita e dos limites superior e inferior.
 - **Derivada**: Calcula o valor da derivada a partir da função escrita e do ponto de derivada.
+- **Estatística**: Calcula média, mediana, moda, variância e desvio padrão de uma lista de números separados por vírgula.
   
 ## Como Usar
 
@@ -85,13 +86,14 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 
 **16. Derivada**
 
+**17.Estatística**
+
 ###   Para sair da calculadora digite o núemro abaixo:   
 
-**17. Sair**
+**18. Sair**
 
-![image](https://github.com/user-attachments/assets/f076a4e9-c160-4729-823a-ac0278ee0457)
-
-        
+![image](https://github.com/user-attachments/assets/498467c3-75b3-4b43-aad1-af8f8cae27a0)
+       
 ## 🚀 Instalação
 
 1. Clone o repositório:
@@ -106,6 +108,9 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 - **Biblioteca Math**: Para cálculos matemáticos avançados.
 - **Matplotlib**: Para geração de gráficos.
 - **NumPy**: Para manipulação de arrays e cálculos numéricos.
+- **Biblioteca quad do pacote cipy.integrate**: Para cálculo de integrais
+- **Biblioteca findiff**: Para cálculo de derivadas
+- **Biblioteca statistics**: Para cálculos estatísticos
 
 ## 📌 Exemplos de uso
 
