@@ -54,43 +54,33 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 
 ###   Após isso selecione o número que está relacionado a operação que deseja efetuar:
 
-**1. Adição**
+**1. Operações Básicas (Adição, Subtração, Multiplicação, Divisão)**
 
-**2. Subtração**
+**2. Potenciação**
 
-**3. Multiplicação**
+**3. Radiciação**
 
-**4. Divisão"**
+**4. Fatorial**
 
-**5. Potenciação**
+**5. Teorema de Pitágoras**
 
-**6. Radiciação**
+**6. Equações do 1º e 2º grau**
 
-**7. Fatorial**
+**7. Trigonometria (Seno, Cosseno, Tangente)**
 
-**8. Logaritmo**
+**8. Logaritmos**
 
-**9. Teorema de Pitágoras**
+**9. Derivada de uma Função**
 
-**10. Equação do primeiro grau**
+**10. Integral de uma Função**
 
-**11. Equação do segundo grau**
+**11. Gráfico de Função**
 
-**12. Seno, Cosseno e Tangente**
-
-**13. Gráfico da função do primeiro grau**
-
-**14. Gráfico da função do segundo grau**
-
-**15. Integral Definida**
-
-**16. Derivada**
-
-**17.Estatística**
+**12. Cálculo Estatístico (Média, Mediana, Moda, Variância, Desvio Padrão)**
 
 ###   Para sair da calculadora digite o núemro abaixo:   
 
-**18. Sair**
+**13. Sair**
 
 ![image](https://github.com/user-attachments/assets/b6b202e1-fb4b-4c27-a759-b9054ca8aa9c)
 
