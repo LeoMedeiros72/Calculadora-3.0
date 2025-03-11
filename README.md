@@ -92,7 +92,8 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 
 **18. Sair**
 
-![image](https://github.com/user-attachments/assets/498467c3-75b3-4b43-aad1-af8f8cae27a0)
+![image](https://github.com/user-attachments/assets/b6b202e1-fb4b-4c27-a759-b9054ca8aa9c)
+
        
 ## 🚀 Instalação
 
