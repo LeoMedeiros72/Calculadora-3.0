@@ -4,7 +4,7 @@
 
 # Calculadora em Python
 
-Este é um projeto educacional desenvolvido em Python, que consiste em uma calculadora capaz de realizar operações matemáticas variadas, incluindo adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, além do cálculo do teorema de Pitágoras. Também abrange o estudo de funções e equações do 1º e 2º grau, permitindo a construção de gráficos e a determinação das coordenadas dos vértices. As funcionalidades incluem ainda cálculos trigonométricos (seno, cosseno e tangente), logaritmos naturais e de bases diversas, bem como integrais definidas e derivadas. O projeto é flexível e pode ser expandido com novos recursos.
+Este é um projeto educacional desenvolvido em Python, que consiste em uma calculadora capaz de realizar operações matemáticas variadas, incluindo adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, além do cálculo do teorema de Pitágoras. Também abrange o estudo de funções e equações do 1º e 2º grau, permitindo a construção de gráficos e a determinação das coordenadas dos vértices. As funcionalidades incluem ainda cálculos trigonométricos (seno, cosseno e tangente), logaritmos naturais e de bases diversas, bem como integrais definidas e derivadas, regra de três simnples inversamente proporcional ou diretamente propocional. O projeto é flexível e pode ser expandido com novos recursos.
 
 ## Sobre o Projeto
 
@@ -43,6 +43,7 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 - **Integral Definida**: Calcula o valor da Integral a partir da função escrita e dos limites superior e inferior.
 - **Derivada**: Calcula o valor da derivada a partir da função escrita e do ponto de derivada.
 - **Estatística**: Calcula média, mediana, moda, variância e desvio padrão de uma lista de números separados por vírgula.
+- **Regra de Três**: A partir de 3 números digitados faz o cálculo do quarto número, podendo ser diretamente propocional ou inversamente propocional.
   
 ## Como Usar
 
@@ -78,11 +79,13 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 
 **12. Cálculo Estatístico (Média, Mediana, Moda, Variância, Desvio Padrão)**
 
+**13. Regra de Três (Diretamente ou Inversamente Proporcional)**
+
 ###   Para sair da calculadora digite o núemro abaixo:   
 
-**13. Sair**
+**14. Sair**
 
-![image](https://github.com/user-attachments/assets/b6b202e1-fb4b-4c27-a759-b9054ca8aa9c)
+![image](https://github.com/user-attachments/assets/c4cbe31e-97ea-449f-bdb4-9a47afa8b1b1)
 
        
 ## 🚀 Instalação
