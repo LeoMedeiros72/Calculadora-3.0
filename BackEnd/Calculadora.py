@@ -17,7 +17,9 @@ def menu():
     print("10. Integral de uma Função")
     print("11. Gráfico de Função")
     print("12. Cálculo Estatístico (Média, Mediana, Moda, Variância, Desvio Padrão)")
-    print("13. Sair")
+    print("13. Regra de três (diretamente ou inversamente proporcional)")
+    print("14. Sair")
+
 
 def operacoes_basicas():
     num1 = float(input("Digite o primeiro número: "))
@@ -130,6 +132,19 @@ def estatisticas():
     print(f"Variância: {np.var(dados)}")
     print(f"Desvio padrão: {np.std(dados)}")
 
+def regra_tres():
+    print("1. Diretamente Proporcional")
+    print("2. Inversamente Proporcional")
+    tipo = input("Escolha o tipo: ")
+    a = float(input("Valor de a: "))
+    b = float(input("Valor de b: "))
+    c = float(input("Valor de c: "))
+    if tipo == '1':
+        d = (b * c) / a
+    else:
+        d = (a * b) / c
+    print(f"O valor de d é: {d}")
+
 def main():
     while True:
         menu()
@@ -159,6 +174,8 @@ def main():
         elif escolha == '12':
             estatisticas()
         elif escolha == '13':
+            regra_tres()
+        elif escolha == '14':
             print("Saindo...")
             break
         else:
