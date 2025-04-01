@@ -44,6 +44,7 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 - **Derivada**: Calcula o valor da derivada a partir da função escrita e do ponto de derivada.
 - **Estatística**: Calcula média, mediana, moda, variância e desvio padrão de uma lista de números separados por vírgula.
 - **Regra de Três**: A partir de 3 números digitados faz o cálculo do quarto número, podendo ser diretamente propocional ou inversamente propocional.
+- **Conversão de Temperatura**: Converte Fahrenheit para Celsius ou Celsius para Fahrenheit.
   
 ## Como Usar
 
@@ -81,11 +82,13 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 
 **13. Regra de Três (Diretamente ou Inversamente Proporcional)**
 
+**14. Conversão de Temperatura**
+
 ###   Para sair da calculadora digite o núemro abaixo:   
 
-**14. Sair**
+**15. Sair**
 
-![image](https://github.com/user-attachments/assets/c4cbe31e-97ea-449f-bdb4-9a47afa8b1b1)
+![image](https://github.com/user-attachments/assets/bc37920d-0cc6-4891-bb98-d2efffbad800)
 
        
 ## 🚀 Instalação
