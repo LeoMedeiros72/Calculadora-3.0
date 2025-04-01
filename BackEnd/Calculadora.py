@@ -18,7 +18,8 @@ def menu():
     print("11. Gráfico de Função")
     print("12. Cálculo Estatístico (Média, Mediana, Moda, Variância, Desvio Padrão)")
     print("13. Regra de três (diretamente ou inversamente proporcional)")
-    print("14. Sair")
+    print("14. Conversão de Temperatura (Celsius para Fahrenheit ou Fahrenheit para Celsius)")
+    print("15. Sair")
 
 
 def operacoes_basicas():
@@ -145,6 +146,16 @@ def regra_tres():
         d = (a * b) / c
     print(f"O valor de d é: {d}")
 
+def conversao_temperatura():
+    print("1. Celsius para Fahrenheit")
+    print("2. Fahrenheit para Celsius")
+    opcao = input("Escolha a conversão: ")
+    temp = float(input("Digite a temperatura: "))
+    if opcao == '1':
+        print(f"{temp}°C = {(temp * 9/5) + 32}°F")
+    else:
+        print(f"{temp}°F = {(temp - 32) * 5/9}°C")
+
 def main():
     while True:
         menu()
@@ -176,6 +187,8 @@ def main():
         elif escolha == '13':
             regra_tres()
         elif escolha == '14':
+            conversao_temperatura()
+        elif escolha == '15':
             print("Saindo...")
             break
         else:
