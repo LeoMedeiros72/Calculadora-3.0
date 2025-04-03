@@ -4,7 +4,7 @@
 
 # Calculadora em Python
 
-Este é um projeto educacional desenvolvido em Python, que consiste em uma calculadora capaz de realizar operações matemáticas variadas, incluindo adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, além do cálculo do teorema de Pitágoras. Também abrange o estudo de funções e equações do 1º e 2º grau, permitindo a construção de gráficos e a determinação das coordenadas dos vértices. As funcionalidades incluem ainda cálculos trigonométricos (seno, cosseno e tangente), logaritmos naturais e de bases diversas, bem como integrais definidas e derivadas, regra de três simnples inversamente proporcional ou diretamente propocional, conversão de temperatura (Celsius para Fahrenheit e Fahrenheit para Celsius). O projeto é flexível e pode ser expandido com novos recursos.
+Este é um projeto educacional desenvolvido em Python, que consiste em uma calculadora capaz de realizar operações matemáticas variadas, incluindo adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, além do cálculo do teorema de Pitágoras. Também abrange o estudo de funções e equações do 1º e 2º grau, permitindo a construção de gráficos e a determinação das coordenadas dos vértices. As funcionalidades incluem ainda cálculos trigonométricos (seno, cosseno e tangente), logaritmos naturais e de bases diversas, bem como integrais definidas e derivadas, regra de três simnples inversamente proporcional ou diretamente propocional, conversão de temperatura (Celsius para Fahrenheit e Fahrenheit para Celsius), cálculo com números complexos (soma, subtração, multiplicação, divisão, conjugado e módulo). O projeto é flexível e pode ser expandido com novos recursos.
 
 ## Sobre o Projeto
 
@@ -45,6 +45,7 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 - **Estatística**: Calcula média, mediana, moda, variância e desvio padrão de uma lista de números separados por vírgula.
 - **Regra de Três**: A partir de 3 números digitados faz o cálculo do quarto número, podendo ser diretamente propocional ou inversamente propocional.
 - **Conversão de Temperatura**: Converte Fahrenheit para Celsius ou Celsius para Fahrenheit.
+- **Números Complexos**: Faz cálculos básicos (Adição, subtração, multiplicação e divisão), assim como avançados (conjugado e módulo) de números complexos no formato a+bj.
   
 ## Como Usar
 
@@ -84,13 +85,14 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 
 **14. Conversão de Temperatura**
 
+**15. Números Complexos**
+
 ###   Para sair da calculadora digite o núemro abaixo:   
 
-**15. Sair**
+**16. Sair**
 
-![image](https://github.com/user-attachments/assets/bc37920d-0cc6-4891-bb98-d2efffbad800)
-
-       
+![image](https://github.com/user-attachments/assets/97428287-0661-416d-9001-2e991d96780e)
+      
 ## 🚀 Instalação
 
 1. Clone o repositório:
