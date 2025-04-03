@@ -78,7 +78,7 @@ python calculadora.py
 
 **16. Ver histórico**
 
-###   Para sair da calculadora digite o núemro abaixo:   
+###   Para sair da calculadora digite o número abaixo:   
 
 **17. Sair**
 
