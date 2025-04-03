@@ -1,0 +1,26 @@
+# Requirements para Calculadora Científica em Python
+# Versões mínimas recomendadas
+
+# Bibliotecas essenciais
+numpy>=1.24.0          # Para cálculos numéricos e vetoriais
+matplotlib>=3.7.0      # Para geração de gráficos
+sympy>=1.12            # Para matemática simbólica (derivadas, integrais)
+scipy>=1.10.0          # Para cálculos científicos avançados
+
+# Bibliotecas adicionais
+statsmodels>=0.14.0    # Para cálculos estatísticos avançados
+findiff>=0.8.0         # Para diferenciação numérica
+networkx>=3.0          # Para visualização de grafos (opcional)
+
+# Dependências para interface gráfica (se aplicável)
+tk>=8.6.12             # Já vem com Python, mas incluído para referência
+PySimpleGUI>=4.60.4    # Alternativa moderna ao Tkinter puro
+
+# Para versão web/Colab
+ipywidgets>=8.0.0      # Para widgets interativos
+ipython>=8.0.0         # Para melhor display no Jupyter
+
+# Ferramentas de desenvolvimento
+pytest>=7.0.0          # Para testes unitários
+black>=22.0.0          # Formatação de código
+flake8>=5.0.0          # Linter para qualidade do código
