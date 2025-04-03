@@ -7,44 +7,22 @@
 [![Downloads](https://img.shields.io/pypi/dm/calculadora-avancada?color=blue)]()
 [![Último Commit](https://img.shields.io/github/last-commit/LeoMedeiros72/Calculadora-3.0)]()
 
-# Calculadora em Python
+# Calculadora Científica em Python
 
-Este é um projeto educacional desenvolvido em Python, que consiste em uma calculadora capaz de realizar operações matemáticas variadas, incluindo adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, além do cálculo do teorema de Pitágoras. Também abrange o estudo de funções e equações do 1º e 2º grau, permitindo a construção de gráficos e a determinação das coordenadas dos vértices. As funcionalidades incluem ainda cálculos trigonométricos (seno, cosseno e tangente), logaritmos naturais e de bases diversas, bem como integrais definidas e derivadas, regra de três simnples inversamente proporcional ou diretamente propocional, conversão de temperatura (Celsius para Fahrenheit e Fahrenheit para Celsius), cálculo com números complexos (soma, subtração, multiplicação, divisão, conjugado e módulo). O projeto é flexível e pode ser expandido com novos recursos.
+Uma calculadora multifuncional para operações matemáticas básicas e avançadas, desenvolvida como projeto educacional em Python.
 
 ## 🔍 Navegação
 
 <div align="center">
-  <a href="#-funcionalidades">✨ Funcionalidades</a> •
-  <a href="#-como-usar">🚀 Como Usar</a> •
-  <a href="#-exemplos">📌 Exemplos</a> •
-  <a href="#️-tecnologias">🛠️ Tecnologias</a> •
-  <a href="#️-roadmap">🗺️ Roadmap</a>
+  <a href="#funcionalidades">✨ Funcionalidades</a> •
+  <a href="#como-usar">🚀 Como Usar</a> •
+  <a href="#exemplos">📌 Exemplos</a> •
+  <a href="#tecnologias">🛠️ Tecnologias</a> •
+  <a href="#roadmap">🗺️ Roadmap</a> •
+  <a href="#autor">👨‍💻 Autor</a>
 </div>
 
-## Sobre o Projeto
-
-Este projeto foi desenvolvido como uma calculadora multifuncional em Python, com o objetivo de auxiliar estudantes e entusiastas de matemática a realizar cálculos básicos e avançados de forma simples e intuitiva. Além das operações matemáticas tradicionais, a calculadora também inclui funcionalidades como gráficos de funções, resolução de equações e cálculos trigonométricos.
-
-O projeto foi criado para fins educacionais, com o intuito de demonstrar a aplicação de conceitos de programação em Python, como funções, manipulação de bibliotecas (como `math` , `matplotlib`, `numpy`, `scipy` e `sympy`) e estruturas de controle.
-
-## 📋 Pré-requisitos
-- Python 3.8+
-- Pip instalado
-- Bibliotecas: `numpy matplotlib sympy scipy`
-
-## Contribuição
-
-Contribuições são sempre bem-vindas! Se você quiser contribuir para este projeto, siga os passos abaixo:
-
-1. Faça um **fork** do repositório.
-2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
-3. Commit suas mudanças (`git commit -m 'Adicionando nova feature'`).
-4. Faça um push para a branch (`git push origin feature/nova-feature`).
-5. Abra um **Pull Request**.
-
-Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://github.com/LeoMedeiros72/Calculadora-3.0/issues) no repositório.
-
-## ✨ Funcionalidades
+## <span id="funcionalidades">✨ Funcionalidades</span>
 
 | Categoria           | Operações Disponíveis                          |
 |---------------------|-----------------------------------------------|
@@ -57,21 +35,14 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 | **Complexos**       | Operações com números complexos               |
 | **Vetores**         | Produto escalar/vetorial, Ângulo entre vetores|
 
-## 🚀 Como Usar
+## <span id="como-usar">🚀 Como Usar</span>
 
 ```bash
-# Clone o repositório
+# Clone e execute
 git clone https://github.com/LeoMedeiros72/Calculadora-3.0.git
 cd Calculadora-3.0
-
-# Instale as dependências
 pip install -r requirements.txt
-
-# Execute (modo console)
 python calculadora.py
-
-# Ou execute a interface gráfica
-python calculadora_gui.py
 ```
 
 ###   Após isso selecione o número que está relacionado a operação que deseja efetuar:
@@ -112,15 +83,7 @@ python calculadora_gui.py
 
 ![image](https://github.com/user-attachments/assets/97428287-0661-416d-9001-2e991d96780e)
       
-## 🚀 Instalação
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/LeoMedeiros72/Calculadora-3.0.git
-   cd Calculadora-3.0
-
-## 🛠️ Tecnologias
+## <span id="tecnologias">🛠️ Tecnologias</span>
 
 - **Python 3.12**: Linguagem de programação principal.
 - **Biblioteca Math**: Para cálculos matemáticos avançados.
@@ -130,7 +93,7 @@ python calculadora_gui.py
 - **Biblioteca findiff**: Para cálculo de derivadas
 - **Biblioteca statistics**: Para cálculos estatísticos
 
-## 📌 Exemplos
+## <span id="exemplos">📌 Exemplos</span>
 
 ### Adição
 #### Entrada
@@ -162,22 +125,104 @@ O vértice da parábola é: (1.50, -0.25)
 
 ![image](https://github.com/user-attachments/assets/6c9cb919-7113-4076-a4e5-c78a24839752)
 
-## 🗺️ Roadmap
+## <span id="roadmap">🗺️ Roadmap</span>
 
-- [x] Adicionar operações básicas (adição, subtração, multiplicação, divisão).
-- [x] Implementar gráficos de funções do primeiro e segundo grau.
-- [x] Adicionar suporte para números complexos.
-- [ ] Implementar uma interface gráfica (GUI) usando Tkinter.
-- [x] Adicionar suporte para cálculos de derivadas e integrais.
+### ✅ Versão Atual (v3.0)
+```mermaid
+pie
+    title Progresso v3.0
+    "Concluído" : 100
+    "Em Testes" : 0
+    "Pendente" : 0
+```
+
+#Versão 3.0 - 2024-2025
+- [x] ✅ Operações matemáticas básicas e avançadas
+- [x] ✅ Suporte a números complexos
+- [x] ✅ Sistema de histórico de cálculos
+- [x] ✅ Números complexos
+- [x] ✅ Geração de gráficos
+
+```mermaid
+pie
+    title Prioridades 2025
+    "Interface Gráfica" : 35
+    "Performance" : 25
+    "Novas Operações" : 40
+```
+### Próximas Versões 
+```mermaid
+gantt
+    title Cronograma 2025-2026
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b '%y
+    section v3.5 (Q1 2025)
+    Interface Tkinter : crit, active, 2025-07-07, 45d
+    section v4.0 (Q2 2025)
+    Cálculo Vetorial : 2025-09-01, 60d
+    section v4.5 (Q3 2025)
+    Conversor Unidades : 2025-12-15, 30d
+```
+
+**Próximos Passos Imediatos**:
+1. [ ] 🖥️ Finalizar GUI (Previsão: Jul/2025)
+2. [ ] 📦 Publicar no PyPI
+3. [ ] 🧪 Testes E2E
+
+<details> <summary>📊 Métricas Detalhadas</summary>
+
+```mermaid
+pie
+    title Alocação de Recursos
+    "Frontend" : 40
+    "Novas Features" : 35
+    "Otimização" : 25
+```
+</details>
+
+**Longo Prazo**:
+- [ ] **v4.5**: Integração com Jupyter Notebooks
+- [ ] **v5.0**: Versão Web (Streamlit/Dash)
+- [ ] **v5.5**: Pacote PyPI com CLI avançado
+- [ ] **v6.0**: Versão Mobile (Kivy)
+
+<details> <summary>📊 Métricas de Progresso (Clique para expandir)</summary>
+  
+```mermaid
+pie
+    title Progresso Geral
+    "Concluído" : 65
+    "Em Desenvolvimento" : 25
+    "Planejado" : 10
+```
+</details>
+
+
+
+# 📅 Linha do Tempo Visual
+
+```mermaid
+timeline
+    title Evolução da Calculadora
+    2023 Q4 : Versão Inicial (Console)
+    2024 Q2 : Adição de Gráficos
+    2025 Q4 : Interface Gráfica
+    2025-2026 Q2 : Versão Web
+```
+
+- **v3.5 (Jul 2025)**  
+  ✅ Interface gráfica básica  
+  🏗️ Sistema de plugins
+
+- **v4.0 (Dez 2025)**  
+  🔜 Cálculo matricial  
+  ⏳ Exportação LaTeX
 
 ## 📂 Licença
 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## Autor
-
-- **Leonardo Medeiros**
-## 👨‍💻 Autor
+## <span id="autor">👨‍💻 Autor</span>
 
 **Leonardo Medeiros**
 
