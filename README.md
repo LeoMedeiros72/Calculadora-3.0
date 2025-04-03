@@ -1,7 +1,7 @@
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![Licença](https://img.shields.io/badge/license-MIT-blue)
 ![Python](https://img.shields.io/badge/python-3.12-blue)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hs5znm-lPc-AOodtHnrPCNhMBg8jakax.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hs5znm-lPc-AOodtHnrPCNhMBg8jakax)
 
 # Calculadora em Python
 
