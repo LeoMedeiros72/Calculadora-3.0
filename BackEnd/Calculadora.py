@@ -19,7 +19,8 @@ def menu():
     print("12. Cálculo Estatístico (Média, Mediana, Moda, Variância, Desvio Padrão)")
     print("13. Regra de três (diretamente ou inversamente proporcional)")
     print("14. Conversão de Temperatura (Celsius para Fahrenheit ou Fahrenheit para Celsius)")
-    print("15. Sair")
+    print("15. Números Complexos")  
+    print("16. Sair")  
 
 
 def operacoes_basicas():
@@ -156,6 +157,74 @@ def conversao_temperatura():
     else:
         print(f"{temp}°F = {(temp - 32) * 5/9}°C")
 
+def numeros_complexos():
+    print("\nOperações com Números Complexos")
+    print("1. Soma")
+    print("2. Subtração")
+    print("3. Multiplicação")
+    print("4. Divisão")
+    print("5. Conjugado")
+    print("6. Módulo")
+    print("7. Forma Polar")
+    print("8. Potenciação")
+    print("9. Raízes")
+    op = input("Escolha a operação (1-9): ")
+
+    try:
+        if op in ['1', '2', '3', '4']:
+            print("\nDigite os números no formato a+bj (ex: 3+4j)")
+            a = complex(input("Primeiro número complexo: "))
+            b = complex(input("Segundo número complexo: "))
+            
+            if op == '1':
+                print(f"\n{a} + {b} = {a + b}")
+            elif op == '2':
+                print(f"\n{a} - {b} = {a - b}")
+            elif op == '3':
+                print(f"\n{a} * {b} = {a * b}")
+            elif op == '4':
+                print(f"\n{a} / {b} = {a / b}")
+
+        elif op == '5':
+            num = complex(input("\nDigite o número complexo (formato a+bj): "))
+            print(f"\nConjugado de {num} = {num.real}{-num.imag:+}j")
+
+        elif op == '6':
+            num = complex(input("\nDigite o número complexo (formato a+bj): "))
+            print(f"\nMódulo de {num} = {abs(num)}")
+
+        elif op == '7':
+            num = complex(input("\nDigite o número complexo (formato a+bj): "))
+            r = abs(num)
+            theta = np.angle(num, deg=True)
+            print(f"\nForma polar de {num}:")
+            print(f"Módulo: {r}")
+            print(f"Ângulo: {theta}°")
+
+        elif op == '8':
+            num = complex(input("\nDigite o número complexo (formato a+bj): "))
+            exp = int(input("Digite o expoente inteiro: "))
+            print(f"\n{num}^{exp} = {num**exp}")
+
+        elif op == '9':
+            num = complex(input("\nDigite o número complexo (formato a+bj): "))
+            n = int(input("Digite a ordem da raiz (ex: 2 para raiz quadrada): "))
+            r = abs(num)**(1/n)
+            theta = np.angle(num)
+            
+            print(f"\nRaízes {n}ésimas de {num}:")
+            for k in range(n):
+                root = r * (np.cos((theta + 2*np.pi*k)/n) + 1j*np.sin((theta + 2*np.pi*k)/n))
+                print(f"Raiz {k+1}: {root:.4f}")
+
+        else:
+            print("Opção inválida!")
+
+    except ValueError:
+        print("Formato inválido! Use o formato a+bj (ex: 3+4j)")
+    except Exception as e:
+        print(f"Ocorreu um erro: {e}")
+
 def main():
     while True:
         menu()
@@ -189,6 +258,8 @@ def main():
         elif escolha == '14':
             conversao_temperatura()
         elif escolha == '15':
+            numeros_complexos()
+        elif escolha == '16':
             print("Saindo...")
             break
         else:
