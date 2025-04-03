@@ -11,14 +11,15 @@
 
 Este é um projeto educacional desenvolvido em Python, que consiste em uma calculadora capaz de realizar operações matemáticas variadas, incluindo adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, além do cálculo do teorema de Pitágoras. Também abrange o estudo de funções e equações do 1º e 2º grau, permitindo a construção de gráficos e a determinação das coordenadas dos vértices. As funcionalidades incluem ainda cálculos trigonométricos (seno, cosseno e tangente), logaritmos naturais e de bases diversas, bem como integrais definidas e derivadas, regra de três simnples inversamente proporcional ou diretamente propocional, conversão de temperatura (Celsius para Fahrenheit e Fahrenheit para Celsius), cálculo com números complexos (soma, subtração, multiplicação, divisão, conjugado e módulo). O projeto é flexível e pode ser expandido com novos recursos.
 
-## 📜 Índice
-- [Funcionalidades](#funcionalidades)
-- [Como Usar](#como-usar)
-- [Exemplos](#-exemplos-de-uso)
-- [Tecnologias](#tecnologias-utilizadas)
-- [Roadmap](#roadmap)
-- [Licença](#-licença)
-- [Autor](#-autor)
+## 🔍 Navegação
+
+<div align="center">
+  <a href="#-funcionalidades">✨ Funcionalidades</a> •
+  <a href="#-como-usar">🚀 Como Usar</a> •
+  <a href="#-exemplos">📌 Exemplos</a> •
+  <a href="#️-tecnologias">🛠️ Tecnologias</a> •
+  <a href="#️-roadmap">🗺️ Roadmap</a>
+</div>
 
 ## Sobre o Projeto
 
@@ -43,35 +44,34 @@ Contribuições são sempre bem-vindas! Se você quiser contribuir para este pro
 
 Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://github.com/LeoMedeiros72/Calculadora-3.0/issues) no repositório.
 
-## Funcionalidades
+## ✨ Funcionalidades
 
-- **Adição**: Soma dois números.
-- **Subtração**: Subtrai o segundo número do primeiro.
-- **Multiplicação**: Multiplica dois números.
-- **Divisão**: Divide o primeiro número pelo segundo (com tratamento de divisão por zero).
-- **Potenciação**: Calcula a potência de um número elevado a outro.
-- **Radiciação**: Calcula a raiz de acordo com o número escolhido como base e o número escolhido como índice.
-- **Fatorial**: Calcula o fatorial de um número.
-- **Logaritmo**: Calcula o logaritmo natural ou logaritmo de base específica.
-- **Teorema de Pitágoras**: Calcula o valor de cateto ou hipotenusa a partir de dois valores digitados.
-- **Equação do primeiro grau**: Calcula o valor de X na equação do primeiro grau.
-- **Equação do segundo grau**: Calcula o valor das raízes, discriminante (delta) e vértices da parábola.
-- **Trigonometria**: Calcula o valor do seno, cosseno e tangente do ângulo digitado.
-- **Função do primeiro grau**: Faz o gráfico da função mostrando os pontos de interseção tanto no eixo X quanto no Y.
-- **Função do segundo grau**: Faz o gráfico da função mostrando a parábola, o vértice e os pontos de interseção dos eixos X e Y (se existir).
-- **Integral Definida**: Calcula o valor da Integral a partir da função escrita e dos limites superior e inferior.
-- **Derivada**: Calcula o valor da derivada a partir da função escrita e do ponto de derivada.
-- **Estatística**: Calcula média, mediana, moda, variância e desvio padrão de uma lista de números separados por vírgula.
-- **Regra de Três**: A partir de 3 números digitados faz o cálculo do quarto número, podendo ser diretamente propocional ou inversamente propocional.
-- **Conversão de Temperatura**: Converte Fahrenheit para Celsius ou Celsius para Fahrenheit.
-- **Números Complexos**: Faz cálculos básicos (Adição, subtração, multiplicação e divisão), assim como avançados (conjugado e módulo) de números complexos no formato a+bj.
-  
-## Como Usar
+| Categoria           | Operações Disponíveis                          |
+|---------------------|-----------------------------------------------|
+| **Básicas**         | Adição, Subtração, Multiplicação, Divisão     |
+| **Potenciação**     | Expoentes, Raízes                             |
+| **Álgebra**         | Equações 1º/2º grau, Fatorial, Logaritmos     |
+| **Geometria**       | Teorema de Pitágoras, Trigonometria           |
+| **Cálculo**         | Derivadas, Integrais, Gráficos                |
+| **Estatística**     | Média, Mediana, Moda, Desvio Padrão           |
+| **Complexos**       | Operações com números complexos               |
+| **Vetores**         | Produto escalar/vetorial, Ângulo entre vetores|
 
-### Para executar a calculadora, use o seguinte comando:
+## 🚀 Como Usar
 
-   ```bash
-   python calculadora.py
+```bash
+# Clone o repositório
+git clone https://github.com/LeoMedeiros72/Calculadora-3.0.git
+cd Calculadora-3.0
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Execute (modo console)
+python calculadora.py
+
+# Ou execute a interface gráfica
+python calculadora_gui.py
 ```
 
 ###   Após isso selecione o número que está relacionado a operação que deseja efetuar:
@@ -120,7 +120,7 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
    git clone https://github.com/LeoMedeiros72/Calculadora-3.0.git
    cd Calculadora-3.0
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
 - **Python 3.12**: Linguagem de programação principal.
 - **Biblioteca Math**: Para cálculos matemáticos avançados.
@@ -130,7 +130,7 @@ Se você encontrar algum bug ou tiver uma sugestão, abra uma [issue](https://gi
 - **Biblioteca findiff**: Para cálculo de derivadas
 - **Biblioteca statistics**: Para cálculos estatísticos
 
-## 📌 Exemplos de uso
+## 📌 Exemplos
 
 ### Adição
 #### Entrada
@@ -162,7 +162,7 @@ O vértice da parábola é: (1.50, -0.25)
 
 ![image](https://github.com/user-attachments/assets/6c9cb919-7113-4076-a4e5-c78a24839752)
 
-## Roadmap
+## 🗺️ Roadmap
 
 - [x] Adicionar operações básicas (adição, subtração, multiplicação, divisão).
 - [x] Implementar gráficos de funções do primeiro e segundo grau.
