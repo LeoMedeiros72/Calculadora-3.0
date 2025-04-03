@@ -72,9 +72,8 @@ Pressione Enter após cada entrada
 ```mermaid
 pie
     title Progresso v3.0
-    "Concluído" : 100
-    "Em Testes" : 0
-    "Pendente" : 0
+    "Concluído" : 95
+    "Em Testes" : 5
 ```
 
 #Versão 3.0 - 2024-2025
