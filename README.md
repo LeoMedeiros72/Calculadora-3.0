@@ -1,4 +1,4 @@
-![Calculadora Python Banner](https://www.canva.com/design/DAGjllTvY4Q/UOa49GwV4x5XP6tKyU78uw/edit?utm_content=DAGjllTvY4Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+![Calculadora Python Banner](./Assets/Capa.jpg)
 
 [![Status](https://img.shields.io/badge/status-active-brightgreen)]()
 [![Licença](https://img.shields.io/badge/license-MIT-blue)]()
