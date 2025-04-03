@@ -1,4 +1,4 @@
-![Calculadora Python Banner](./Assets/Capa.jpg)
+![Calculadora Python Banner](./Assents/Capa.jpg)
 
 [![Status](https://img.shields.io/badge/status-active-brightgreen)]()
 [![Licença](https://img.shields.io/badge/license-MIT-blue)]()
