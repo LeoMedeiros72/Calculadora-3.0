@@ -14,72 +14,57 @@ Uma calculadora multifuncional para operações matemáticas básicas e avançad
 ## 🔍 Navegação
 
 <div align="center">
-  <a href="#funcionalidades">✨ Funcionalidades</a> •
-  <a href="#como-usar">🚀 Como Usar</a> •
-  <a href="#tecnologias">🛠️ Tecnologias</a> •
-  <a href="#roadmap">🗺️ Roadmap</a> •
-  <a href="#autor">👨‍💻 Autor</a>
+  <a href="#-funcionalidades">✨ Funcionalidades</a> •
+  <a href="#-como-usar">🚀 Como Usar</a> •
+  <a href="#-tecnologias">🛠️ Tecnologias</a> •
+  <a href="#-roadmap">🗺️ Roadmap</a> •
+  <a href="#-autor">👨‍💻 Autor</a>
 </div>
 
-## <span id="funcionalidades">✨ Funcionalidades</span>
+## ✨ Funcionalidades
 
-| Categoria           | Operações Disponíveis                          |
-|---------------------|-----------------------------------------------|
-| **Básicas**         | Adição, Subtração, Multiplicação, Divisão     |
-| **Potenciação**     | Expoentes, Raízes                             |
-| **Álgebra**         | Equações 1º/2º grau, Fatorial, Logaritmos     |
-| **Geometria**       | Teorema de Pitágoras, Trigonometria           |
-| **Cálculo**         | Derivadas, Integrais, Gráficos                |
-| **Estatística**     | Média, Mediana, Moda, Desvio Padrão           |
-| **Complexos**       | Operações com números complexos               |
-| **Vetores**         | Produto escalar/vetorial, Ângulo entre vetores|
+| Categoria           | Operações Disponíveis                          | Opção |
+|---------------------|-----------------------------------------------|-------|
+| **Básicas**         | Adição, Subtração, Multiplicação, Divisão     | 1 |
+| **Potenciação**     | Expoentes, Raízes                             | 2 |
+| **Álgebra**         | Equações 1º/2º grau, Fatorial, Logaritmos     | 3-8 |
+| **Geometria**       | Teorema de Pitágoras, Trigonometria           | 5,7 |
+| **Cálculo**         | Derivadas, Integrais, Gráficos                | 9-11 |
+| **Estatística**     | Média, Mediana, Moda, Desvio Padrão           | 12 |
+| **Conversões**      | Temperatura, Regra de Três                    | 13-14 |
+| **Complexos**       | Operações com números complexos               | 15 |
 
-## <span id="como-usar">🚀 Como Usar</span>
+## 🚀 Como Usar
 
 ```bash
-# Clone e execute
+# Clone o repositório
 git clone https://github.com/LeoMedeiros72/Calculadora-3.0.git
 cd Calculadora-3.0
+
+
+# Instale as dependências
 pip install -r requirements.txt
+
+# Execute a calculadora
 python calculadora.py
 ```
+# Instruções:
 
-### 🧮 Menu de Operações
+Digite o número correspondente à operação desejada
 
-| Categoria                | Operações Disponíveis               | Opção |
-|--------------------------|-------------------------------------|-------|
-| **Operações Básicas**    | Adição, Subtração, Multiplicação, Divisão | 1 |
-| **Potenciação**          | Cálculo de potências                | 2 |
-| **Radiciação**           | Cálculo de raízes                   | 3 |
-| **Fatorial**             | Cálculo de fatorial                 | 4 |
-| **Teorema de Pitágoras** | Cálculo de hipotenusa/catetos       | 5 |
-| **Equações**             | 1º e 2º grau                        | 6 |
-| **Trigonometria**        | Seno, Cosseno, Tangente             | 7 |
-| **Logaritmos**           | Logaritmos naturais e de base qualquer | 8 |
-| **Cálculo Diferencial**  | Derivadas de funções                | 9 |
-| **Cálculo Integral**     | Integrais de funções                | 10 |
-| **Gráficos**             | Plotagem de funções                 | 11 |
-| **Estatística**          | Média, Mediana, Moda, Variância, DP | 12 |
-| **Regra de Três**        | Direta e inversamente proporcional  | 13 |
-| **Conversão**            | Celsius ↔ Fahrenheit                | 14 |
-| **Números Complexos**    | Operações com números complexos     | 15 |
-| **Histórico**            | Visualizar operações anteriores     | 16 |
-| **Sair**                 | Encerrar o programa                 | 17 |
+Siga as instruções específicas de cada operação
 
-**Como usar:**  
-Digite o número correspondente à operação desejada e pressione Enter.
+Pressione Enter após cada entrada
 
 ![image](https://github.com/user-attachments/assets/567204d3-65e3-44b3-ba2c-76fd9177526f)
       
 ## <span id="tecnologias">🛠️ Tecnologias</span>
 
-- **Python 3.12**: Linguagem de programação principal.
-- **Biblioteca Math**: Para cálculos matemáticos avançados.
-- **Matplotlib**: Para geração de gráficos.
-- **NumPy**: Para manipulação de arrays e cálculos numéricos.
-- **Biblioteca quad do pacote cipy.integrate**: Para cálculo de integrais
-- **Biblioteca findiff**: Para cálculo de derivadas
-- **Biblioteca statistics**: Para cálculos estatísticos
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-1.26-black?logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.8-orange?logo=matplotlib&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-1.11-green?logo=scipy&logoColor=white)
+![Statistics](https://img.shields.io/badge/Statistics-StdLib-yellowgreen)
 
 ## <span id="roadmap">🗺️ Roadmap</span>
 
