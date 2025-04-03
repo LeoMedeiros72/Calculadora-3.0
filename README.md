@@ -162,6 +162,10 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICEN
 ## Autor
 
 - **Leonardo Medeiros**
-  - GitHub: [LeoMedeiros72](https://github.com/LeoMedeiros72)
-  - LinkedIn: [Leonardo Medeiros](https://www.linkedin.com/in/leonardo-medeiros-43556b211/)
-  - E-mail: xorao.lsm@gmail.com
+## 👨‍💻 Autor
+
+**Leonardo Medeiros**
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LeoMedeiros72)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leonardo-medeiros-43556b211/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:xorao.lsm@gmail.com)
