@@ -1,20 +1,35 @@
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-![Licença](https://img.shields.io/badge/license-MIT-blue)
-![Python](https://img.shields.io/badge/python-3.12-blue)
-![Último Commit](https://img.shields.io/github/last-commit/LeoMedeiros72/Calculadora-3.0)
-![Tamanho](https://img.shields.io/github/repo-size/LeoMedeiros72/Calculadora-3.0)
-![Manutenção](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![Calculadora Python Banner](https://www.canva.com/design/DAGjllTvY4Q/UOa49GwV4x5XP6tKyU78uw/edit?utm_content=DAGjllTvY4Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+[![Status](https://img.shields.io/badge/status-active-brightgreen)]()
+[![Licença](https://img.shields.io/badge/license-MIT-blue)]()
+[![Python](https://img.shields.io/badge/python-3.12+-blue)]()
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hs5znm-lPc-AOodtHnrPCNhMBg8jakax)
+[![Downloads](https://img.shields.io/pypi/dm/calculadora-avancada?color=blue)]()
+[![Último Commit](https://img.shields.io/github/last-commit/LeoMedeiros72/Calculadora-3.0)]()
 
 # Calculadora em Python
 
 Este é um projeto educacional desenvolvido em Python, que consiste em uma calculadora capaz de realizar operações matemáticas variadas, incluindo adição, subtração, multiplicação, divisão, potenciação, radiciação, fatorial, além do cálculo do teorema de Pitágoras. Também abrange o estudo de funções e equações do 1º e 2º grau, permitindo a construção de gráficos e a determinação das coordenadas dos vértices. As funcionalidades incluem ainda cálculos trigonométricos (seno, cosseno e tangente), logaritmos naturais e de bases diversas, bem como integrais definidas e derivadas, regra de três simnples inversamente proporcional ou diretamente propocional, conversão de temperatura (Celsius para Fahrenheit e Fahrenheit para Celsius), cálculo com números complexos (soma, subtração, multiplicação, divisão, conjugado e módulo). O projeto é flexível e pode ser expandido com novos recursos.
+
+## 📜 Índice
+- [Funcionalidades](#funcionalidades)
+- [Como Usar](#como-usar)
+- [Exemplos](#-exemplos-de-uso)
+- [Tecnologias](#tecnologias-utilizadas)
+- [Roadmap](#roadmap)
+- [Licença](#-licença)
+- [Autor](#-autor)
 
 ## Sobre o Projeto
 
 Este projeto foi desenvolvido como uma calculadora multifuncional em Python, com o objetivo de auxiliar estudantes e entusiastas de matemática a realizar cálculos básicos e avançados de forma simples e intuitiva. Além das operações matemáticas tradicionais, a calculadora também inclui funcionalidades como gráficos de funções, resolução de equações e cálculos trigonométricos.
 
 O projeto foi criado para fins educacionais, com o intuito de demonstrar a aplicação de conceitos de programação em Python, como funções, manipulação de bibliotecas (como `math` , `matplotlib`, `numpy`, `scipy` e `sympy`) e estruturas de controle.
+
+## 📋 Pré-requisitos
+- Python 3.8+
+- Pip instalado
+- Bibliotecas: `numpy matplotlib sympy scipy`
 
 ## Contribuição
 
@@ -151,7 +166,7 @@ O vértice da parábola é: (1.50, -0.25)
 
 - [x] Adicionar operações básicas (adição, subtração, multiplicação, divisão).
 - [x] Implementar gráficos de funções do primeiro e segundo grau.
-- [ ] Adicionar suporte para números complexos.
+- [x] Adicionar suporte para números complexos.
 - [ ] Implementar uma interface gráfica (GUI) usando Tkinter.
 - [x] Adicionar suporte para cálculos de derivadas e integrais.
 
