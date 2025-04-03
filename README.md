@@ -44,43 +44,30 @@ pip install -r requirements.txt
 python calculadora.py
 ```
 
-###   Após isso selecione o número que está relacionado a operação que deseja efetuar:
+### 🧮 Menu de Operações
 
-**1. Operações Básicas (Adição, Subtração, Multiplicação, Divisão)**
+| Categoria                | Operações Disponíveis               | Opção |
+|--------------------------|-------------------------------------|-------|
+| **Operações Básicas**    | Adição, Subtração, Multiplicação, Divisão | 1 |
+| **Potenciação**          | Cálculo de potências                | 2 |
+| **Radiciação**           | Cálculo de raízes                   | 3 |
+| **Fatorial**             | Cálculo de fatorial                 | 4 |
+| **Teorema de Pitágoras** | Cálculo de hipotenusa/catetos       | 5 |
+| **Equações**             | 1º e 2º grau                        | 6 |
+| **Trigonometria**        | Seno, Cosseno, Tangente             | 7 |
+| **Logaritmos**           | Logaritmos naturais e de base qualquer | 8 |
+| **Cálculo Diferencial**  | Derivadas de funções                | 9 |
+| **Cálculo Integral**     | Integrais de funções                | 10 |
+| **Gráficos**             | Plotagem de funções                 | 11 |
+| **Estatística**          | Média, Mediana, Moda, Variância, DP | 12 |
+| **Regra de Três**        | Direta e inversamente proporcional  | 13 |
+| **Conversão**            | Celsius ↔ Fahrenheit                | 14 |
+| **Números Complexos**    | Operações com números complexos     | 15 |
+| **Histórico**            | Visualizar operações anteriores     | 16 |
+| **Sair**                 | Encerrar o programa                 | 17 |
 
-**2. Potenciação**
-
-**3. Radiciação**
-
-**4. Fatorial**
-
-**5. Teorema de Pitágoras**
-
-**6. Equações do 1º e 2º grau**
-
-**7. Trigonometria (Seno, Cosseno, Tangente)**
-
-**8. Logaritmos**
-
-**9. Derivada de uma Função**
-
-**10. Integral de uma Função**
-
-**11. Gráfico de Função**
-
-**12. Cálculo Estatístico (Média, Mediana, Moda, Variância, Desvio Padrão)**
-
-**13. Regra de Três (Diretamente ou Inversamente Proporcional)**
-
-**14. Conversão de Temperatura**
-
-**15. Números Complexos**
-
-**16. Ver histórico**
-
-###   Para sair da calculadora digite o número abaixo:   
-
-**17. Sair**
+**Como usar:**  
+Digite o número correspondente à operação desejada e pressione Enter.
 
 ![image](https://github.com/user-attachments/assets/567204d3-65e3-44b3-ba2c-76fd9177526f)
       
