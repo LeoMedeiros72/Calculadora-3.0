@@ -9,15 +9,12 @@
 [![Downloads](https://img.shields.io/pypi/dm/calculadora-avancada?color=blue)]()
 [![Último Commit](https://img.shields.io/github/last-commit/LeoMedeiros72/Calculadora-3.0)]()
 
-![Calculadora Python Banner](./Assents/Capa.jpg)
-
 Uma calculadora multifuncional para operações matemáticas básicas e avançadas, desenvolvida como projeto educacional em Python com interface intuitiva e histórico de cálculos.
 
 ## 📌 Índice
 
 - [✨ Funcionalidades](#-funcionalidades)
 - [🚀 Como Usar](#-como-usar)
-- [📦 Instalação](#-instalação)
 - [🛠️ Tecnologias](#%EF%B8%8F-tecnologias)
 - [🗺️ Roadmap](#%EF%B8%8F-roadmap)
 - [📄 Licença](#-licença)
@@ -173,8 +170,4 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICEN
 
 ## <span id="autor">👨‍💻 Autor</span>
 
-<div align="center"> <sub>Criado com ❤️ por <a href="https://github.com/LeoMedeiros72">LeoMedeiros72</a></sub> </div>
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LeoMedeiros72)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leonardo-medeiros-43556b211/)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:xorao.lsm@gmail.com)
+<div align="center"> <a href="https://github.com/LeoMedeiros72"> <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"> </a> <a href="https://www.linkedin.com/in/leonardo-medeiros-43556b211/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"> </a> <a href="mailto:xorao.lsm@gmail.com"> <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"> </a> </div><div align="center"> <sub>Criado com ❤️ por <a href="https://github.com/LeoMedeiros72">LeoMedeiros72</a></sub> </div> 
