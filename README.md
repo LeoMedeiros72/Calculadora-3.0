@@ -1,4 +1,4 @@
-![Calculadora Python Banner](./Assents/Capa.jpg)
+![Calculadora Python Banner](./assets/Capa.jpg)
 
 # 🧮 Calculadora Científica em Python
 
