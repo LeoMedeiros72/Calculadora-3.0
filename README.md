@@ -170,4 +170,35 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICEN
 
 ## <span id="autor">👨‍💻 Autor</span>
 
-<div align="center"> <a href="https://github.com/LeoMedeiros72"> <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"> </a> <a href="https://www.linkedin.com/in/leonardo-medeiros-43556b211/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"> </a> <a href="mailto:xorao.lsm@gmail.com"> <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"> </a> </div><div align="center"> <sub>Criado com ❤️ por <a href="https://github.com/LeoMedeiros72">LeoMedeiros72</a></sub> </div> 
+<div align="center">
+  <img src="./assets/1.png" width="100" style="border-radius: 50%; margin-bottom: 15px;" alt="Foto de Perfil Leonardo Medeiros">
+  
+  **Leonardo Medeiros**  
+  *Matemático Especialista, Cientista e Analista de Dados Sênior com especialização em IA e Machine Learning*
+
+  <div style="margin: 20px 0; display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
+    <a href="https://github.com/LeoMedeiros72" target="_blank" title="GitHub">
+      <img src="https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+    </a>
+    <a href="https://www.linkedin.com/in/leonardo-medeiros-43556b211/" target="_blank" title="LinkedIn">
+      <img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+    </a>
+    <a href="https://instagram.com/LeoMedeiros72" target="_blank" title="Instagram">
+      <img src="https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+    </a>
+    <a href="mailto:xorao.lsm@gmail.com" target="_blank" title="E-mail">
+      <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
+    </a>
+  </div>
+
+  <div style="margin-top: 10px;">
+    <a href="https://github.com/LeoMedeiros72/Calculadora-3.0/stargazers" target="_blank">
+      <img src="https://img.shields.io/github/stars/LeoMedeiros72/Calculadora-3.0?color=blue&style=flat-square" alt="Stars">
+    </a>
+    <a href="https://github.com/LeoMedeiros72/Calculadora-3.0/network/members" target="_blank">
+      <img src="https://img.shields.io/github/forks/LeoMedeiros72/Calculadora-3.0?color=green&style=flat-square" alt="Forks">
+    </a>
+  </div>
+
+  <sub style="display: block; margin-top: 20px; color: #586069;">Criado com ❤️ e Python</sub>
+</div>
