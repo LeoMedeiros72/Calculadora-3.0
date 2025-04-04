@@ -1,29 +1,24 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from sympy import symbols, diff, integrate, Eq, solve
+from sympy import symbols, diff, integrate, Eq, solve, sympify, lambdify
 from scipy import stats
 from datetime import datetime
 import logging
+import math
+import json
 
 class CalculadoraCientifica:
     def __init__(self):
         self.historico = []
-        self.x = symbols('x')
-        logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s - %(levelname)s - %(message)s',
-            filename='calculadora.log'
-        )
+        try:
+            with open('historico.json', 'r') as f:
+                self.historico = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            self.historico = []
 
-    def adicionar_ao_historico(self, operacao: str, resultado: str):
-        """Registra uma operação no histórico"""
-        entrada = {
-            'data': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            'operacao': operacao,
-            'resultado': resultado
-        }
-        self.historico.append(entrada)
-        logging.info(f"Operação registrada: {operacao}")
+    def salvar_historico(self):
+        with open('historico.json', 'w') as f:
+            json.dump(self.historico, f)
 
     def menu_principal(self):
         """Exibe o menu principal"""
@@ -73,10 +68,15 @@ class CalculadoraCientifica:
         self.adicionar_ao_historico("Radiciação", f"raiz {indice} de {numero} = {resultado}")
 
     def fatorial(self):
-        numero = int(input("Digite o número para calcular o fatorial: "))
-        resultado = np.math.factorial(numero)
-        print(f"Fatorial de {numero}: {resultado}")
-        self.adicionar_ao_historico("Fatorial", f"{numero}! = {resultado}")
+        try:
+            numero = int(input("Digite o número para calcular o fatorial: "))
+            if numero < 0:
+                raise ValueError("O fatorial só está definido para números não negativos.")
+            resultado = math.factorial(numero)
+            print(f"Fatorial de {numero}: {resultado}")
+            self.adicionar_ao_historico("Fatorial", f"{numero}! = {resultado}") 
+        except ValueError as e:
+            print(f"Erro: {e}")
 
     def pitagoras(self):
         a = float(input("Digite o valor do cateto a: "))
@@ -148,16 +148,19 @@ class CalculadoraCientifica:
 
     def grafico(self):
         funcao_str = input("Digite a função para o gráfico (ex: x**2 + 3*x - 4): ")
-        funcao = lambda x: eval(funcao_str)
-        x_vals = np.linspace(-10, 10, 400)
-        y_vals = funcao(x_vals)
-        plt.plot(x_vals, y_vals)
-        plt.title(f"Gráfico da função: {funcao_str}")
-        plt.xlabel("x")
-        plt.ylabel("y")
-        plt.grid(True)
-        plt.show()
-        self.adicionar_ao_historico("Gráfico", f"Função: {funcao_str}")
+        try:
+            x = symbols('x')
+            expr = sympify(funcao_str)  
+            funcao = lambdify(x, expr, modules=['numpy'])  
+            x_vals = np.linspace(-10, 10, 400)
+            y_vals = funcao(x_vals)
+            plt.plot(x_vals, y_vals)
+            plt.title(f"Gráfico da função: {funcao_str}")
+            plt.grid(True)
+            plt.show()
+            self.adicionar_ao_historico("Gráfico", f"Função: {funcao_str}")
+        except Exception as e:
+            print(f"Erro ao processar a função: {e}")
 
     def estatisticas(self):
         dados = list(map(float, input("Digite os dados separados por espaço: ").split()))
@@ -165,14 +168,14 @@ class CalculadoraCientifica:
         mediana = np.median(dados)
         variancia = np.var(dados)
         desvio_padrao = np.std(dados)
-        
+
         moda_resultado = stats.mode(dados)
         if isinstance(moda_resultado.mode, np.ndarray):
             modas = moda_resultado.mode
             moda_str = ', '.join(map(str, modas)) if len(modas) > 1 else str(modas[0])
         else:
             moda_str = str(moda_resultado.mode)
-        
+
         print(f"Média: {media}")
         print(f"Mediana: {mediana}")
         print(f"Moda: {moda_str}")
@@ -187,14 +190,14 @@ class CalculadoraCientifica:
         a = float(input("Valor de a: "))
         b = float(input("Valor de b: "))
         c = float(input("Valor de c: "))
-        
+
         if tipo == '1':
             d = (b * c) / a
             operacao = f"{a}/{b} = {c}/x → x = {d:.2f}"
         else:
             d = (a * b) / c
             operacao = f"{a}*{b} = {c}*x → x = {d:.2f}"
-            
+
         print(f"O valor de d é: {d}")
         self.adicionar_ao_historico("Regra de Três", operacao)
 
@@ -203,7 +206,7 @@ class CalculadoraCientifica:
         print("2. Fahrenheit para Celsius")
         opcao = input("Escolha a conversão: ")
         temp = float(input("Digite a temperatura: "))
-        
+
         if opcao == '1':
             resultado = (temp * 9/5) + 32
             print(f"{temp}°C = {resultado}°F")
@@ -231,7 +234,7 @@ class CalculadoraCientifica:
                 print("\nDigite os números no formato a+bj (ex: 3+4j)")
                 a = complex(input("Primeiro número complexo: "))
                 b = complex(input("Segundo número complexo: "))
-                
+
                 if op == '1':
                     resultado = a + b
                     print(f"\n{a} + {b} = {resultado}")
@@ -282,7 +285,7 @@ class CalculadoraCientifica:
                 n = int(input("Digite a ordem da raiz (ex: 2 para raiz quadrada): "))
                 r = abs(num)**(1/n)
                 theta = np.angle(num)
-                
+
                 print(f"\nRaízes {n}ésimas de {num}:")
                 for k in range(n):
                     root = r * (np.cos((theta + 2*np.pi*k)/n) + 1j*np.sin((theta + 2*np.pi*k)/n))
@@ -296,6 +299,16 @@ class CalculadoraCientifica:
             print("Formato inválido! Use o formato a+bj (ex: 3+4j)")
         except Exception as e:
             print(f"Ocorreu um erro: {e}")
+
+    def adicionar_ao_historico(self, operacao: str, resultado: str):
+        """Registra uma operação no histórico"""
+        entrada = {
+            'data': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            'operacao': operacao,
+            'resultado': resultado
+        }
+        self.historico.append(entrada)
+        logging.info(f"Operação registrada: {operacao}")
 
     def mostrar_historico(self):
         """Exibe o histórico de operações"""
@@ -314,7 +327,10 @@ class CalculadoraCientifica:
         while True:
             self.menu_principal()
             escolha = input("\nEscolha uma opção (1-17): ")
-            
+            if not escolha.isdigit() or int(escolha) not in range(1, 18):
+                print("Opção inválida! Digite um número entre 1 e 17.")
+                continue
+
             try:
                 if escolha == '1':
                     self.operacoes_basicas()
@@ -349,13 +365,14 @@ class CalculadoraCientifica:
                 elif escolha == '16':
                     self.mostrar_historico()
                 elif escolha == '17':
+                    self.salvar_historico()  
                     print("\nObrigado por usar a Calculadora Científica!")
                     break
                 else:
                     print("\nOpção inválida! Tente novamente.")
-                    
+
                 input("\nPressione Enter para continuar...")
-                
+
             except KeyboardInterrupt:
                 print("\nOperação cancelada pelo usuário")
                 break
