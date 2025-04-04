@@ -1,38 +1,51 @@
 ![Calculadora Python Banner](./Assents/Capa.jpg)
 
-[![Status](https://img.shields.io/badge/status-active-brightgreen)]()
+# 🧮 Calculadora Científica em Python
+
+[![Status](https://img.shields.io/badge/status-active-success)]()
 [![Licença](https://img.shields.io/badge/license-MIT-blue)]()
 [![Python](https://img.shields.io/badge/python-3.12+-blue)]()
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hs5znm-lPc-AOodtHnrPCNhMBg8jakax)
 [![Downloads](https://img.shields.io/pypi/dm/calculadora-avancada?color=blue)]()
 [![Último Commit](https://img.shields.io/github/last-commit/LeoMedeiros72/Calculadora-3.0)]()
 
-# Calculadora Científica em Python
+![Calculadora Python Banner](./Assents/Capa.jpg)
 
-Uma calculadora multifuncional para operações matemáticas básicas e avançadas, desenvolvida como projeto educacional em Python.
+Uma calculadora multifuncional para operações matemáticas básicas e avançadas, desenvolvida como projeto educacional em Python com interface intuitiva e histórico de cálculos.
 
-## 🔍 Navegação
+## 📌 Índice
 
-<div align="center">
-  <a href="#-funcionalidades">✨ Funcionalidades</a> •
-  <a href="#-como-usar">🚀 Como Usar</a> •
-  <a href="#-tecnologias">🛠️ Tecnologias</a> •
-  <a href="#-roadmap">🗺️ Roadmap</a> •
-  <a href="#-autor">👨‍💻 Autor</a>
-</div>
+- [✨ Funcionalidades](#-funcionalidades)
+- [🚀 Como Usar](#-como-usar)
+- [📦 Instalação](#-instalação)
+- [🛠️ Tecnologias](#%EF%B8%8F-tecnologias)
+- [🗺️ Roadmap](#%EF%B8%8F-roadmap)
+- [📄 Licença](#-licença)
+- [👨‍💻 Autor](#-autor)
 
 ## ✨ Funcionalidades
 
-| Categoria           | Operações Disponíveis                          | Opção |
-|---------------------|-----------------------------------------------|-------|
-| **Básicas**         | Adição, Subtração, Multiplicação, Divisão     | 1 |
-| **Potenciação**     | Expoentes, Raízes                             | 2 |
-| **Álgebra**         | Equações 1º/2º grau, Fatorial, Logaritmos     | 3-8 |
-| **Geometria**       | Teorema de Pitágoras, Trigonometria           | 5,7 |
-| **Cálculo**         | Derivadas, Integrais, Gráficos                | 9-11 |
-| **Estatística**     | Média, Mediana, Moda, Desvio Padrão           | 12 |
-| **Conversões**      | Temperatura, Regra de Três                    | 13-14 |
-| **Complexos**       | Operações com números complexos               | 15 |
+### 🔢 Operações Matemáticas
+| Categoria           | Operações Disponíveis                          | 
+|---------------------|-----------------------------------------------|
+| **Básicas**         | Adição, Subtração, Multiplicação, Divisão     |
+| **Potenciação**     | Expoentes, Raízes                             |
+| **Álgebra**         | Equações 1º/2º grau, Fatorial, Logaritmos     |
+| **Geometria**       | Teorema de Pitágoras, Trigonometria           |
+| **Cálculo**         | Derivadas, Integrais                          |
+
+### 📊 Visualização
+- Geração de gráficos de funções
+- Histórico de operações persistente
+
+### 🔄 Conversões
+- Temperatura (Celsius/Fahrenheit)
+- Regra de três simples e inversa
+
+### ℂ Números Complexos
+- Operações básicas
+- Forma polar
+- Cálculo de raízes
 
 ## 🚀 Como Usar
 
@@ -60,11 +73,7 @@ Pressione Enter após cada entrada
       
 ## <span id="tecnologias">🛠️ Tecnologias</span>
 
-![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-1.26-black?logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-3.8-orange?logo=matplotlib&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-1.11-green?logo=scipy&logoColor=white)
-![Statistics](https://img.shields.io/badge/Statistics-StdLib-yellowgreen)
+<div align="center"> <img src="https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/NumPy-1.26-black?logo=numpy&logoColor=white" alt="NumPy"> <img src="https://img.shields.io/badge/Matplotlib-3.8-orange?logo=matplotlib&logoColor=white" alt="Matplotlib"> <img src="https://img.shields.io/badge/SciPy-1.11-green?logo=scipy&logoColor=white" alt="SciPy"> </div>
 
 ## <span id="roadmap">🗺️ Roadmap</span>
 
@@ -164,7 +173,7 @@ Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICEN
 
 ## <span id="autor">👨‍💻 Autor</span>
 
-**Leonardo Medeiros**
+<div align="center"> <sub>Criado com ❤️ por <a href="https://github.com/LeoMedeiros72">LeoMedeiros72</a></sub> </div>
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LeoMedeiros72)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/leonardo-medeiros-43556b211/)
