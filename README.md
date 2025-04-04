@@ -6,7 +6,7 @@
 [![Licença](https://img.shields.io/badge/license-MIT-blue)]()
 [![Python](https://img.shields.io/badge/python-3.12+-blue)]()
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hs5znm-lPc-AOodtHnrPCNhMBg8jakax)
-[![Downloads](https://pypi.org/project/calculadora-cientifica/3.0.0/)]()
+[![Downloads](https://static.pepy.tech/badge/calculadora-cientifica/month?color=blue)](https://pepy.tech/project/calculadora-cientifica)
 [![Último Commit](https://img.shields.io/github/last-commit/LeoMedeiros72/Calculadora-3.0)]()
 
 Uma calculadora multifuncional para operações matemáticas básicas e avançadas, desenvolvida como projeto educacional em Python com interface intuitiva e histórico de cálculos.
