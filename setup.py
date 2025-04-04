@@ -3,6 +3,7 @@ import pathlib
 
 # Diretório atual
 HERE = pathlib.Path(__file__).parent
+README = (HERE / "README.md").read_text(encoding='utf-8')  # Adicione encoding
 
 # Leia o README.md
 README = (HERE / "README.md").read_text()
