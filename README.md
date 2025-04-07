@@ -6,7 +6,7 @@
 [![Licença](https://img.shields.io/badge/license-MIT-blue)]()
 [![Python](https://img.shields.io/badge/python-3.12+-blue)]()
 [![PyPI](https://img.shields.io/badge/Downloads-PyPI-blue)](https://pypi.org/project/calculadora-cientifica/3.0.0/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hs5znm-lPc-AOodtHnrPCNhMBg8jakax)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1umUljavDMosiqixrbeXnF1M_e57gllLB?usp=chrome_ntp#scrollTo=-oRMf0wStqKi)
 [![PyPI Version](https://img.shields.io/pypi/v/calculadora-cientifica)](https://pypi.org/project/calculadora-cientifica/)
 [![Último Commit](https://img.shields.io/github/last-commit/LeoMedeiros72/Calculadora-3.0)]()
 
