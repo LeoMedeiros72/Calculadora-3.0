@@ -59,7 +59,7 @@ pip install -r requirements.txt
 # Execute a calculadora
 python calculadora.py
 ```
-# Instruções:
+# Instruções Notebook:
 
 Digite o número correspondente à operação desejada
 
@@ -68,6 +68,17 @@ Siga as instruções específicas de cada operação
 Pressione Enter após cada entrada
 
 ![image](https://github.com/user-attachments/assets/567204d3-65e3-44b3-ba2c-76fd9177526f)
+
+# Instruções Colab:
+
+Gere o código e rode-o completamente
+
+Selecione na caixa de entrada a operação desejada e os valores serão desbloqueados de acordo com a opção desejada
+
+Siga as instruções específicas de cada operação
+
+![image](https://github.com/user-attachments/assets/fe2d4a79-ffec-4903-adb6-ff6caf1756a8)
+
       
 ## <span id="tecnologias">🛠️ Tecnologias</span>
 
@@ -87,7 +98,7 @@ pie
 - [x] ✅ Operações matemáticas básicas e avançadas
 - [x] ✅ Suporte a números complexos
 - [x] ✅ Sistema de histórico de cálculos
-- [x] ✅ Números complexos
+- [x] ✅ Versão Colab com Interface Gráfica
 - [x] ✅ Geração de gráficos
 
 ```mermaid
@@ -113,7 +124,7 @@ gantt
 
 **Próximos Passos Imediatos**:
 1. [ ] 🖥️ Finalizar GUI (Previsão: Jul/2025)
-2. [ ] 📦 Publicar no PyPI
+2. [x] 📦 Publicar no PyPI
 3. [ ] 🧪 Testes E2E
 
 <details> <summary>📊 Métricas Detalhadas</summary>
