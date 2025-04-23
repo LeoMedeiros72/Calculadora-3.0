@@ -1,15 +1,53 @@
 !pip install ipywidgets matplotlib
 import ipywidgets as widgets
 from IPython.display import display, clear_output
-
-import ipywidgets as widgets
-from IPython.display import display, clear_output
 import math
 import numpy as np
 import matplotlib.pyplot as plt
 import sympy as sp
 import statistics
 import cmath
+import json
+from IPython.display import HTML
+
+# Estilo CSS personalizado
+style = """
+<style>
+.widget-label {
+    font-weight: bold !important;
+    color: #2c3e50 !important;
+}
+.widget-button {
+    background-color: #3498db !important;
+    color: white !important;
+    font-weight: bold !important;
+    border: none !important;
+}
+.widget-button:hover {
+    background-color: #2980b9 !important;
+}
+.widget-dropdown {
+    border: 1px solid #3498db !important;
+}
+.widget-output {
+    border: 1px solid #ddd !important;
+    padding: 10px !important;
+    margin-top: 10px !important;
+    border-radius: 5px !important;
+    background-color: #f9f9f9 !important;
+}
+.calculator-title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+</style>
+"""
+
+# Aplicar o estilo
+display(HTML(style))
 
 # Widgets
 menu = widgets.Dropdown(
@@ -18,25 +56,62 @@ menu = widgets.Dropdown(
              'Equação 1º grau', 'Equação 2º grau', 'Logaritmo', 'Derivada', 'Integral',
              'Gráfico de função', 'Estatística', 'Regra de três', 'Conversão de temperatura',
              'Números complexos'],
-    description='Função:'
+    description='Função:',
+    style={'description_width': 'initial'},
+    layout={'width': '90%'}
 )
 
-entrada1 = widgets.FloatText(description='Valor 1:')
-entrada2 = widgets.FloatText(description='Valor 2:')
-entrada3 = widgets.FloatText(description='Valor 3:')
-tipo_box = widgets.ToggleButtons(options=['Diretamente proporcional', 'Inversamente proporcional'], description='Tipo:')
-tipo_temp = widgets.ToggleButtons(options=['C→F', 'F→C'], description='Tipo:')
-expr_input = widgets.Text(description='Expressão:', placeholder='Ex: x**2 + 3*x')
-valores_lista = widgets.Text(description='Valores:', placeholder='Ex: 1,2,2,3,4')
-# Campos extras para número complexo
-z1_real = widgets.FloatText(description='z1 real:')
-z1_imag = widgets.FloatText(description='z1 imag:')
-z2_real = widgets.FloatText(description='z2 real:')
-z2_imag = widgets.FloatText(description='z2 imag:')
+# Criar um título para a calculadora
+title = widgets.HTML(value="<h1 class='calculator-title'>Calculadora Científica Avançada</h1>")
 
-botao = widgets.Button(description='Calcular')
-saida = widgets.Output()
+# Campos de entrada numéricos
+entrada1 = widgets.FloatText(description='Valor 1:', style={'description_width': 'initial'})
+entrada2 = widgets.FloatText(description='Valor 2:', style={'description_width': 'initial'})
+entrada3 = widgets.FloatText(description='Valor 3:', style={'description_width': 'initial'})
 
+# Opções para regra de três e temperatura
+tipo_box = widgets.ToggleButtons(
+    options=['Diretamente proporcional', 'Inversamente proporcional'], 
+    description='Tipo:',
+    style={'description_width': 'initial'}
+)
+tipo_temp = widgets.ToggleButtons(
+    options=['C→F', 'F→C'], 
+    description='Tipo:',
+    style={'description_width': 'initial'}
+)
+
+# Campos para expressões e listas
+expr_input = widgets.Text(
+    description='Expressão:', 
+    placeholder='Ex: x**2 + 3*x',
+    style={'description_width': 'initial'},
+    layout={'width': '90%'}
+)
+valores_lista = widgets.Text(
+    description='Valores:', 
+    placeholder='Ex: 1,2,2,3,4',
+    style={'description_width': 'initial'},
+    layout={'width': '90%'}
+)
+
+# Campos para números complexos
+z1_real = widgets.FloatText(description='z1 real:', style={'description_width': 'initial'})
+z1_imag = widgets.FloatText(description='z1 imag:', style={'description_width': 'initial'})
+z2_real = widgets.FloatText(description='z2 real:', style={'description_width': 'initial'})
+z2_imag = widgets.FloatText(description='z2 imag:', style={'description_width': 'initial'})
+
+# Botão de cálculo com estilo
+botao = widgets.Button(
+    description='Calcular', 
+    button_style='primary',
+    layout={'width': '200px', 'margin': '10px 0 0 0'}
+)
+
+# Área de saída com estilo
+saida = widgets.Output(layout={'border': '1px solid #ddd', 'padding': '10px', 'margin_top': '10px'})
+
+# Função de cálculo (mantida como está)
 def calcular_operacao(b):
     with saida:
         clear_output()
@@ -108,6 +183,7 @@ def calcular_operacao(b):
                 x = sp.symbols('x')
                 f = sp.lambdify(x, sp.sympify(expr), 'numpy')
                 y_vals = f(x_vals)
+                plt.figure(figsize=(8, 5))
                 plt.plot(x_vals, y_vals)
                 plt.title(f'Gráfico de {expr}')
                 plt.grid(True)
@@ -146,6 +222,7 @@ def calcular_operacao(b):
 
 botao.on_click(calcular_operacao)
 
+# Função para atualizar visibilidade dos campos
 def atualizar_visibilidade_campos(change=None):
     op = menu.value
     entrada1.layout.display = entrada2.layout.display = entrada3.layout.display = 'none'
@@ -181,11 +258,39 @@ def atualizar_visibilidade_campos(change=None):
 menu.observe(atualizar_visibilidade_campos, names='value')
 atualizar_visibilidade_campos()
 
-display(menu, entrada1, entrada2, entrada3, tipo_box, tipo_temp, expr_input,
-        valores_lista, z1_real, z1_imag, z2_real, z2_imag, botao, saida)
+# Organizar os widgets em seções
+input_section = widgets.VBox([
+    menu,
+    entrada1,
+    entrada2,
+    entrada3,
+    tipo_box,
+    tipo_temp,
+    expr_input,
+    valores_lista,
+    widgets.HBox([z1_real, z1_imag]),
+    widgets.HBox([z2_real, z2_imag])
+], layout={'margin': '10px 0'})
 
+# Criar o layout principal
+main_layout = widgets.VBox([
+    title,
+    input_section,
+    botao,
+    saida
+], layout={'width': '80%', 'margin': '0 auto', 'padding': '20px', 'border': '1px solid #eee', 'border_radius': '5px'})
 
-with open('historico_calc.json') as f:
-    historico = json.load(f)
-for item in historico:
-    print(item)
+# Exibir a calculadora
+display(main_layout)
+
+# Tentar carregar histórico (opcional)
+try:
+    with open('historico_calc.json') as f:
+        historico = json.load(f)
+    print("\nHistórico de cálculos:")
+    for item in historico:
+        print(f"- {item}")
+except FileNotFoundError:
+    print("\nNenhum histórico encontrado.")
+except Exception as e:
+    print(f"\nErro ao carregar histórico: {e}")
